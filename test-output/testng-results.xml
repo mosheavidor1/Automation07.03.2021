@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="11" passed="0" failed="1" skipped="10">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-12-21T18:15:33 IST" name="Smoke tests - Portal QA env" finished-at="2020-12-21T18:16:11 IST" duration-ms="38150">
+    <groups>
+      <group name="RevokeEndpoint">
+        <method signature="RevokeEndpoint.revokeEndpoint()[pri:11, instance:Tests.LNE.RevokeEndpoint@dffa30b, instance params:[{EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2008@, EP_Type_1=win, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.137}]]" name="revokeEndpoint" class="Tests.LNE.RevokeEndpoint"/>
+      </group> <!-- RevokeEndpoint -->
+      <group name="DownloadInstallers">
+        <method signature="DownloadInstallers.downloadInstallersFromFileCabinet()[pri:0, instance:Tests.Environments.DownloadInstallers@3a91d146, instance params:[{Parameters Per Environment=QA, Customer=TrustwaveEP Test#17, Wait because File is still being processed (virus scanned and stored)=900, Wait files to be downloaded timeout in seconds=600, Wait files ready to download timeout=600}]]" name="downloadInstallersFromFileCabinet" class="Tests.Environments.DownloadInstallers"/>
+      </group> <!-- DownloadInstallers -->
+      <group name="StandaloneEPconfiguration">
+        <method signature="StandaloneEPconfigurationVerify.verifyStandaloneEPconfiguration()[pri:20, instance:Tests.LNE.StandaloneEPconfigurationVerify@7f02251, instance params:[{StandAloneConfig=#REF!, EP_Type_1=win, EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2008@, EP_HostName_1=10.243.68.137, EP_Values_Populate_Method=All_EP_In_One_Row, Download timeout=180}]]" name="verifyStandaloneEPconfiguration" class="Tests.LNE.StandaloneEPconfigurationVerify"/>
+      </group> <!-- StandaloneEPconfiguration -->
+      <group name="ChangeCustomerConfAndVerify">
+        <method signature="ChangeCustomerConfAndVerify.changeCustomerConfAndVerify()[pri:20, instance:Tests.LNE.ChangeCustomerConfAndVerify@5965844d, instance params:[{EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2008@, EP_Type_1=win, EP_HostName_1=10.243.68.137, EP_Values_Populate_Method=All_EP_In_One_Row}]]" name="changeCustomerConfAndVerify" class="Tests.LNE.ChangeCustomerConfAndVerify"/>
+      </group> <!-- ChangeCustomerConfAndVerify -->
+      <group name="InitAndCleanup">
+        <method signature="InitAndCleanupPortal.cleanupAgents()[pri:11, instance:Tests.Environments.InitAndCleanupPortal@7bef452c, instance params:[{EP_Type_1=win, Customer=TrustwaveEP Test#17, EP_UserName_1=Moshe.Avidor, Cluster=yoyo, EP_Password_1=Smile2008@, Parameters Per Environment=QA, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.137}]]" name="cleanupAgents" class="Tests.Environments.InitAndCleanupPortal"/>
+      </group> <!-- InitAndCleanup -->
+      <group name="verify">
+        <method signature="VerifyEndPointOkAtPortalTest.VerifyEndPointStatusAtPortalTest()[pri:0, instance:Tests.Environments.VerifyEndPointOkAtPortalTest@aa004a0, instance params:[{EP_Type_1=win, Customer=TrustwaveEP Test#17, EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2008@, Parameters Per Environment=QA, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.137, EP Appear At CentCom Timeout=120}]]" name="VerifyEndPointStatusAtPortalTest" class="Tests.Environments.VerifyEndPointOkAtPortalTest"/>
+      </group> <!-- verify -->
+      <group name="ClusterConfiguration">
+        <method signature="ClusterConfiguration.setClusterConfiguration()[pri:20, instance:Tests.LNE.ClusterConfiguration@392a04e7, instance params:[{EP_Type_1=win, EP_Type_2=win, EP_UserName_1=Moshe.Avidor, EP_Password_2=password, EP_UserName_2=user name, EP_Password_1=Smile2008@, EP_HostName_1=10.243.68.137, EP_Values_Populate_Method=All_EP_In_One_Row, EP_HostName_2=hostname}]]" name="setClusterConfiguration" class="Tests.LNE.ClusterConfiguration"/>
+      </group> <!-- ClusterConfiguration -->
+      <group name="InstallEP">
+        <method signature="InstallEndPointEnvironmentsTest.InstallTest()[pri:0, instance:Tests.Environments.InstallEndPointEnvironmentsTest@6d4a65c6, instance params:[{Installation timeout=180, From service start until logs show active timeout=180, EP_Type_1=win, EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2008@, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.137}]]" name="InstallTest" class="Tests.Environments.InstallEndPointEnvironmentsTest"/>
+      </group> <!-- InstallEP -->
+      <group name="CreateNewInstallers">
+        <method signature="CreateNewInstallers.CreateNewInstalllersAndDeleteOldInstallers()[pri:0, instance:Tests.Environments.CreateNewInstallers@d176a31, instance params:[{Parameters Per Environment=QA, Wait for publish to be completed=180, Customer=TrustwaveEP Test#17}]]" name="CreateNewInstalllersAndDeleteOldInstallers" class="Tests.Environments.CreateNewInstallers"/>
+      </group> <!-- CreateNewInstallers -->
+      <group name="logs">
+        <method signature="ClientLogToPortalTest.SendLogsAndVerify()[pri:0, instance:Tests.Environments.ClientLogToPortalTest@4c98a6d5, instance params:[{Event Description=Hello!! this is the test info, Customer=TrustwaveEP Test#17, Log To Appear Timeout=1800, Event Log=APPLICATION, Fusion Password=P@ssw0rd1, EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2008@, Parameters Per Environment=QA, Fusion User Name=twSuperAdmin, Event ID=123, Add time stamp to description=Yes, Event Source=AutomationTest, Fusion Link=https://portal.qa.tw-test.net, EP_Type_1=win, Event Type=INFORMATION, Report Interval=30, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.137}]]" name="SendLogsAndVerify" class="Tests.Environments.ClientLogToPortalTest"/>
+      </group> <!-- logs -->
+      <group name="DeleteEndpoint">
+        <method signature="DeleteEndpoint.deleteEndpoint()[pri:10, instance:Tests.LNE.DeleteEndpoint@4d8126f, instance params:[{EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2008@, EP_Type_1=win, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.137}]]" name="deleteEndpoint" class="Tests.LNE.DeleteEndpoint"/>
+      </group> <!-- DeleteEndpoint -->
+    </groups>
+    <test started-at="2020-12-21T18:15:33 IST" name="Smoke tests - Portal QA env" finished-at="2020-12-21T18:16:11 IST" duration-ms="38150">
+      <class name="Tests.LNE.RevokeEndpoint">
+        <test-method signature="revokeEndpoint()[pri:11, instance:Tests.LNE.RevokeEndpoint@dffa30b, instance params:[{EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2008@, EP_Type_1=win, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.137}]]" started-at="2020-12-21T18:16:11 IST" name="revokeEndpoint" depends-on-groups="InstallEP" finished-at="2020-12-21T18:16:11 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method RevokeEndpoint.revokeEndpoint()[pri:11, instance:Tests.LNE.RevokeEndpoint@dffa30b, instance params:[{EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2008@, EP_Type_1=win, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.137}]] depends on not successfully finished methods in group "InstallEP"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method RevokeEndpoint.revokeEndpoint()[pri:11, instance:Tests.LNE.RevokeEndpoint@dffa30b, instance params:[{EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2008@, EP_Type_1=win, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.137}]] depends on not successfully finished methods in group "InstallEP"
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at Utils.Main.RunTest.main(RunTest.java:116)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- revokeEndpoint -->
+      </class> <!-- Tests.LNE.RevokeEndpoint -->
+      <class name="Tests.LNE.ChangeCustomerConfAndVerify">
+        <test-method signature="changeCustomerConfAndVerify()[pri:20, instance:Tests.LNE.ChangeCustomerConfAndVerify@5965844d, instance params:[{EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2008@, EP_Type_1=win, EP_HostName_1=10.243.68.137, EP_Values_Populate_Method=All_EP_In_One_Row}]]" started-at="2020-12-21T18:16:11 IST" name="changeCustomerConfAndVerify" depends-on-groups="DownloadInstallers" finished-at="2020-12-21T18:16:11 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method ChangeCustomerConfAndVerify.changeCustomerConfAndVerify()[pri:20, instance:Tests.LNE.ChangeCustomerConfAndVerify@5965844d, instance params:[{EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2008@, EP_Type_1=win, EP_HostName_1=10.243.68.137, EP_Values_Populate_Method=All_EP_In_One_Row}]] depends on not successfully finished methods in group "DownloadInstallers"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method ChangeCustomerConfAndVerify.changeCustomerConfAndVerify()[pri:20, instance:Tests.LNE.ChangeCustomerConfAndVerify@5965844d, instance params:[{EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2008@, EP_Type_1=win, EP_HostName_1=10.243.68.137, EP_Values_Populate_Method=All_EP_In_One_Row}]] depends on not successfully finished methods in group "DownloadInstallers"
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at Utils.Main.RunTest.main(RunTest.java:116)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeCustomerConfAndVerify -->
+      </class> <!-- Tests.LNE.ChangeCustomerConfAndVerify -->
+      <class name="Tests.Environments.CreateNewInstallers">
+        <test-method signature="CreateNewInstalllersAndDeleteOldInstallers()[pri:0, instance:Tests.Environments.CreateNewInstallers@d176a31, instance params:[{Parameters Per Environment=QA, Wait for publish to be completed=180, Customer=TrustwaveEP Test#17}]]" started-at="2020-12-21T18:16:11 IST" name="CreateNewInstalllersAndDeleteOldInstallers" depends-on-groups="InitAndCleanup" finished-at="2020-12-21T18:16:11 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CreateNewInstallers.CreateNewInstalllersAndDeleteOldInstallers()[pri:0, instance:Tests.Environments.CreateNewInstallers@d176a31, instance params:[{Parameters Per Environment=QA, Wait for publish to be completed=180, Customer=TrustwaveEP Test#17}]] depends on not successfully finished methods in group "InitAndCleanup"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CreateNewInstallers.CreateNewInstalllersAndDeleteOldInstallers()[pri:0, instance:Tests.Environments.CreateNewInstallers@d176a31, instance params:[{Parameters Per Environment=QA, Wait for publish to be completed=180, Customer=TrustwaveEP Test#17}]] depends on not successfully finished methods in group "InitAndCleanup"
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at Utils.Main.RunTest.main(RunTest.java:116)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateNewInstalllersAndDeleteOldInstallers -->
+      </class> <!-- Tests.Environments.CreateNewInstallers -->
+      <class name="Tests.Environments.DownloadInstallers">
+        <test-method signature="downloadInstallersFromFileCabinet()[pri:0, instance:Tests.Environments.DownloadInstallers@3a91d146, instance params:[{Parameters Per Environment=QA, Customer=TrustwaveEP Test#17, Wait because File is still being processed (virus scanned and stored)=900, Wait files to be downloaded timeout in seconds=600, Wait files ready to download timeout=600}]]" started-at="2020-12-21T18:16:11 IST" name="downloadInstallersFromFileCabinet" depends-on-groups="CreateNewInstallers" finished-at="2020-12-21T18:16:11 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method DownloadInstallers.downloadInstallersFromFileCabinet()[pri:0, instance:Tests.Environments.DownloadInstallers@3a91d146, instance params:[{Parameters Per Environment=QA, Customer=TrustwaveEP Test#17, Wait because File is still being processed (virus scanned and stored)=900, Wait files to be downloaded timeout in seconds=600, Wait files ready to download timeout=600}]] depends on not successfully finished methods in group "CreateNewInstallers"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method DownloadInstallers.downloadInstallersFromFileCabinet()[pri:0, instance:Tests.Environments.DownloadInstallers@3a91d146, instance params:[{Parameters Per Environment=QA, Customer=TrustwaveEP Test#17, Wait because File is still being processed (virus scanned and stored)=900, Wait files to be downloaded timeout in seconds=600, Wait files ready to download timeout=600}]] depends on not successfully finished methods in group "CreateNewInstallers"
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at Utils.Main.RunTest.main(RunTest.java:116)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- downloadInstallersFromFileCabinet -->
+      </class> <!-- Tests.Environments.DownloadInstallers -->
+      <class name="Tests.Environments.InstallEndPointEnvironmentsTest">
+        <test-method signature="InstallTest()[pri:0, instance:Tests.Environments.InstallEndPointEnvironmentsTest@6d4a65c6, instance params:[{Installation timeout=180, From service start until logs show active timeout=180, EP_Type_1=win, EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2008@, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.137}]]" started-at="2020-12-21T18:16:11 IST" name="InstallTest" depends-on-groups="ChangeCustomerConfAndVerify" finished-at="2020-12-21T18:16:11 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method InstallEndPointEnvironmentsTest.InstallTest()[pri:0, instance:Tests.Environments.InstallEndPointEnvironmentsTest@6d4a65c6, instance params:[{Installation timeout=180, From service start until logs show active timeout=180, EP_Type_1=win, EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2008@, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.137}]] depends on not successfully finished methods in group "ChangeCustomerConfAndVerify"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method InstallEndPointEnvironmentsTest.InstallTest()[pri:0, instance:Tests.Environments.InstallEndPointEnvironmentsTest@6d4a65c6, instance params:[{Installation timeout=180, From service start until logs show active timeout=180, EP_Type_1=win, EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2008@, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.137}]] depends on not successfully finished methods in group "ChangeCustomerConfAndVerify"
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at Utils.Main.RunTest.main(RunTest.java:116)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InstallTest -->
+      </class> <!-- Tests.Environments.InstallEndPointEnvironmentsTest -->
+      <class name="Tests.Environments.VerifyEndPointOkAtPortalTest">
+        <test-method signature="VerifyEndPointStatusAtPortalTest()[pri:0, instance:Tests.Environments.VerifyEndPointOkAtPortalTest@aa004a0, instance params:[{EP_Type_1=win, Customer=TrustwaveEP Test#17, EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2008@, Parameters Per Environment=QA, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.137, EP Appear At CentCom Timeout=120}]]" started-at="2020-12-21T18:16:11 IST" name="VerifyEndPointStatusAtPortalTest" depends-on-groups="InstallEP" finished-at="2020-12-21T18:16:11 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method VerifyEndPointOkAtPortalTest.VerifyEndPointStatusAtPortalTest()[pri:0, instance:Tests.Environments.VerifyEndPointOkAtPortalTest@aa004a0, instance params:[{EP_Type_1=win, Customer=TrustwaveEP Test#17, EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2008@, Parameters Per Environment=QA, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.137, EP Appear At CentCom Timeout=120}]] depends on not successfully finished methods in group "InstallEP"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method VerifyEndPointOkAtPortalTest.VerifyEndPointStatusAtPortalTest()[pri:0, instance:Tests.Environments.VerifyEndPointOkAtPortalTest@aa004a0, instance params:[{EP_Type_1=win, Customer=TrustwaveEP Test#17, EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2008@, Parameters Per Environment=QA, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.137, EP Appear At CentCom Timeout=120}]] depends on not successfully finished methods in group "InstallEP"
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at Utils.Main.RunTest.main(RunTest.java:116)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyEndPointStatusAtPortalTest -->
+      </class> <!-- Tests.Environments.VerifyEndPointOkAtPortalTest -->
+      <class name="Tests.LNE.StandaloneEPconfigurationVerify">
+        <test-method signature="verifyStandaloneEPconfiguration()[pri:20, instance:Tests.LNE.StandaloneEPconfigurationVerify@7f02251, instance params:[{StandAloneConfig=#REF!, EP_Type_1=win, EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2008@, EP_HostName_1=10.243.68.137, EP_Values_Populate_Method=All_EP_In_One_Row, Download timeout=180}]]" started-at="2020-12-21T18:16:11 IST" name="verifyStandaloneEPconfiguration" depends-on-groups="InstallEP" finished-at="2020-12-21T18:16:11 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method StandaloneEPconfigurationVerify.verifyStandaloneEPconfiguration()[pri:20, instance:Tests.LNE.StandaloneEPconfigurationVerify@7f02251, instance params:[{StandAloneConfig=#REF!, EP_Type_1=win, EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2008@, EP_HostName_1=10.243.68.137, EP_Values_Populate_Method=All_EP_In_One_Row, Download timeout=180}]] depends on not successfully finished methods in group "InstallEP"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method StandaloneEPconfigurationVerify.verifyStandaloneEPconfiguration()[pri:20, instance:Tests.LNE.StandaloneEPconfigurationVerify@7f02251, instance params:[{StandAloneConfig=#REF!, EP_Type_1=win, EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2008@, EP_HostName_1=10.243.68.137, EP_Values_Populate_Method=All_EP_In_One_Row, Download timeout=180}]] depends on not successfully finished methods in group "InstallEP"
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at Utils.Main.RunTest.main(RunTest.java:116)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStandaloneEPconfiguration -->
+      </class> <!-- Tests.LNE.StandaloneEPconfigurationVerify -->
+      <class name="Tests.Environments.ClientLogToPortalTest">
+        <test-method signature="SendLogsAndVerify()[pri:0, instance:Tests.Environments.ClientLogToPortalTest@4c98a6d5, instance params:[{Event Description=Hello!! this is the test info, Customer=TrustwaveEP Test#17, Log To Appear Timeout=1800, Event Log=APPLICATION, Fusion Password=P@ssw0rd1, EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2008@, Parameters Per Environment=QA, Fusion User Name=twSuperAdmin, Event ID=123, Add time stamp to description=Yes, Event Source=AutomationTest, Fusion Link=https://portal.qa.tw-test.net, EP_Type_1=win, Event Type=INFORMATION, Report Interval=30, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.137}]]" started-at="2020-12-21T18:16:11 IST" name="SendLogsAndVerify" depends-on-groups="verify" finished-at="2020-12-21T18:16:11 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method ClientLogToPortalTest.SendLogsAndVerify()[pri:0, instance:Tests.Environments.ClientLogToPortalTest@4c98a6d5, instance params:[{Event Description=Hello!! this is the test info, Customer=TrustwaveEP Test#17, Log To Appear Timeout=1800, Event Log=APPLICATION, Fusion Password=P@ssw0rd1, EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2008@, Parameters Per Environment=QA, Fusion User Name=twSuperAdmin, Event ID=123, Add time stamp to description=Yes, Event Source=AutomationTest, Fusion Link=https://portal.qa.tw-test.net, EP_Type_1=win, Event Type=INFORMATION, Report Interval=30, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.137}]] depends on not successfully finished methods in group "verify"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method ClientLogToPortalTest.SendLogsAndVerify()[pri:0, instance:Tests.Environments.ClientLogToPortalTest@4c98a6d5, instance params:[{Event Description=Hello!! this is the test info, Customer=TrustwaveEP Test#17, Log To Appear Timeout=1800, Event Log=APPLICATION, Fusion Password=P@ssw0rd1, EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2008@, Parameters Per Environment=QA, Fusion User Name=twSuperAdmin, Event ID=123, Add time stamp to description=Yes, Event Source=AutomationTest, Fusion Link=https://portal.qa.tw-test.net, EP_Type_1=win, Event Type=INFORMATION, Report Interval=30, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.137}]] depends on not successfully finished methods in group "verify"
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at Utils.Main.RunTest.main(RunTest.java:116)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SendLogsAndVerify -->
+      </class> <!-- Tests.Environments.ClientLogToPortalTest -->
+      <class name="Tests.LNE.ClusterConfiguration">
+        <test-method signature="setClusterConfiguration()[pri:20, instance:Tests.LNE.ClusterConfiguration@392a04e7, instance params:[{EP_Type_1=win, EP_Type_2=win, EP_UserName_1=Moshe.Avidor, EP_Password_2=password, EP_UserName_2=user name, EP_Password_1=Smile2008@, EP_HostName_1=10.243.68.137, EP_Values_Populate_Method=All_EP_In_One_Row, EP_HostName_2=hostname}]]" started-at="2020-12-21T18:16:11 IST" name="setClusterConfiguration" depends-on-groups="InstallEP" finished-at="2020-12-21T18:16:11 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method ClusterConfiguration.setClusterConfiguration()[pri:20, instance:Tests.LNE.ClusterConfiguration@392a04e7, instance params:[{EP_Type_1=win, EP_Type_2=win, EP_UserName_1=Moshe.Avidor, EP_Password_2=password, EP_UserName_2=user name, EP_Password_1=Smile2008@, EP_HostName_1=10.243.68.137, EP_Values_Populate_Method=All_EP_In_One_Row, EP_HostName_2=hostname}]] depends on not successfully finished methods in group "InstallEP"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method ClusterConfiguration.setClusterConfiguration()[pri:20, instance:Tests.LNE.ClusterConfiguration@392a04e7, instance params:[{EP_Type_1=win, EP_Type_2=win, EP_UserName_1=Moshe.Avidor, EP_Password_2=password, EP_UserName_2=user name, EP_Password_1=Smile2008@, EP_HostName_1=10.243.68.137, EP_Values_Populate_Method=All_EP_In_One_Row, EP_HostName_2=hostname}]] depends on not successfully finished methods in group "InstallEP"
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at Utils.Main.RunTest.main(RunTest.java:116)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setClusterConfiguration -->
+      </class> <!-- Tests.LNE.ClusterConfiguration -->
+      <class name="Tests.LNE.DeleteEndpoint">
+        <test-method signature="deleteEndpoint()[pri:10, instance:Tests.LNE.DeleteEndpoint@4d8126f, instance params:[{EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2008@, EP_Type_1=win, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.137}]]" started-at="2020-12-21T18:16:11 IST" name="deleteEndpoint" depends-on-groups="InstallEP" finished-at="2020-12-21T18:16:11 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method DeleteEndpoint.deleteEndpoint()[pri:10, instance:Tests.LNE.DeleteEndpoint@4d8126f, instance params:[{EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2008@, EP_Type_1=win, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.137}]] depends on not successfully finished methods in group "InstallEP"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method DeleteEndpoint.deleteEndpoint()[pri:10, instance:Tests.LNE.DeleteEndpoint@4d8126f, instance params:[{EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2008@, EP_Type_1=win, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.137}]] depends on not successfully finished methods in group "InstallEP"
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at Utils.Main.RunTest.main(RunTest.java:116)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteEndpoint -->
+      </class> <!-- Tests.LNE.DeleteEndpoint -->
+      <class name="Tests.Environments.InitAndCleanupPortal">
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:Tests.Environments.InitAndCleanupPortal@7bef452c]" started-at="2020-12-21T18:15:33 IST" name="BeforeMethod" finished-at="2020-12-21T18:15:33 IST" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="cleanupAgents()[pri:11, instance:Tests.Environments.InitAndCleanupPortal@7bef452c, instance params:[{EP_Type_1=win, Customer=TrustwaveEP Test#17, EP_UserName_1=Moshe.Avidor, Cluster=yoyo, EP_Password_1=Smile2008@, Parameters Per Environment=QA, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.137}]]" started-at="2020-12-21T18:15:33 IST" name="cleanupAgents" finished-at="2020-12-21T18:16:10 IST" duration-ms="36668" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Could not select the specific cluster  at CentCom search page. cluster: yoyo
+java.lang.NullPointerException
+
+Video: C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation/test-output/capture/InitAndCleanupPortal-21-12-2020-18.15.33.avi
+ScreenShot: C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation/test-output/capture/InitAndCleanupPortal-21-12-2020-18.15.33.png
+
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Could not select the specific cluster  at CentCom search page. cluster: yoyo
+java.lang.NullPointerException
+
+Video: C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation/test-output/capture/InitAndCleanupPortal-21-12-2020-18.15.33.avi
+ScreenShot: C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation/test-output/capture/InitAndCleanupPortal-21-12-2020-18.15.33.png
+
+
+at org.testng.Assert.fail(Assert.java:97)
+at Actions.BrowserActions.CreateNewCluster(BrowserActions.java:716)
+at Tests.Environments.InitAndCleanupPortal.deleteEndpointFromCentCom(InitAndCleanupPortal.java:123)
+at Tests.Environments.InitAndCleanupPortal.cleanupAgents(InitAndCleanupPortal.java:65)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at Utils.Main.RunTest.main(RunTest.java:116)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanupAgents -->
+        <test-method is-config="true" signature="Close()[pri:0, instance:Tests.Environments.InitAndCleanupPortal@7bef452c]" started-at="2020-12-21T18:16:10 IST" name="Close" finished-at="2020-12-21T18:16:11 IST" duration-ms="1404" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Tests.Environments.InitAndCleanupPortal@7bef452c]" started-at="2020-12-21T18:16:11 IST" name="afterMethod" finished-at="2020-12-21T18:16:11 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- Tests.Environments.InitAndCleanupPortal -->
+    </test> <!-- Smoke tests - Portal QA env -->
+  </suite> <!-- Smoke tests - Portal QA env -->
+</testng-results>

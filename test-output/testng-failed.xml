@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Smoke tests - Portal QA env]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Smoke tests - Portal QA env(failed)">
+    <classes>
+      <class name="Tests.Environments.CreateNewInstallers">
+        <methods>
+          <include name="BeforeMethod"/>
+          <include name="CreateNewInstalllersAndDeleteOldInstallers"/>
+          <include name="Close"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- Tests.Environments.CreateNewInstallers -->
+      <class name="Tests.Environments.InstallEndPointEnvironmentsTest">
+        <methods>
+          <include name="BeforeMethod"/>
+          <include name="InstallTest"/>
+          <include name="afterMethod"/>
+          <include name="Close"/>
+        </methods>
+      </class> <!-- Tests.Environments.InstallEndPointEnvironmentsTest -->
+      <class name="Tests.LNE.DeleteEndpoint">
+        <methods>
+          <include name="deleteEndpoint"/>
+          <include name="Close"/>
+        </methods>
+      </class> <!-- Tests.LNE.DeleteEndpoint -->
+      <class name="Tests.Environments.DownloadInstallers">
+        <methods>
+          <include name="BeforeMethod"/>
+          <include name="downloadInstallersFromFileCabinet"/>
+          <include name="afterMethod"/>
+          <include name="Close"/>
+        </methods>
+      </class> <!-- Tests.Environments.DownloadInstallers -->
+      <class name="Tests.LNE.RevokeEndpoint">
+        <methods>
+          <include name="revokeEndpoint"/>
+          <include name="Close"/>
+        </methods>
+      </class> <!-- Tests.LNE.RevokeEndpoint -->
+      <class name="Tests.LNE.ClusterConfiguration">
+        <methods>
+          <include name="setClusterConfiguration"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- Tests.LNE.ClusterConfiguration -->
+      <class name="Tests.LNE.ChangeCustomerConfAndVerify">
+        <methods>
+          <include name="changeCustomerConfAndVerify"/>
+          <include name="Close"/>
+        </methods>
+      </class> <!-- Tests.LNE.ChangeCustomerConfAndVerify -->
+      <class name="Tests.Environments.ClientLogToPortalTest">
+        <methods>
+          <include name="SendLogsAndVerify"/>
+          <include name="BeforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="Close"/>
+        </methods>
+      </class> <!-- Tests.Environments.ClientLogToPortalTest -->
+      <class name="Tests.Environments.InitAndCleanupPortal">
+        <methods>
+          <include name="cleanupAgents"/>
+          <include name="BeforeMethod"/>
+          <include name="Close"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- Tests.Environments.InitAndCleanupPortal -->
+      <class name="Tests.Environments.VerifyEndPointOkAtPortalTest">
+        <methods>
+          <include name="BeforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="VerifyEndPointStatusAtPortalTest"/>
+          <include name="Close"/>
+        </methods>
+      </class> <!-- Tests.Environments.VerifyEndPointOkAtPortalTest -->
+      <class name="Tests.LNE.StandaloneEPconfigurationVerify">
+        <methods>
+          <include name="Close"/>
+          <include name="verifyStandaloneEPconfiguration"/>
+        </methods>
+      </class> <!-- Tests.LNE.StandaloneEPconfigurationVerify -->
+    </classes>
+  </test> <!-- Smoke tests - Portal QA env(failed) -->
+</suite> <!-- Failed suite [Smoke tests - Portal QA env] -->

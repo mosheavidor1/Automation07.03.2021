@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Smoke_tests___Portal_QA_env" class="navigator-link">
+              <span class="suite-name border-failed">Smoke tests - Portal QA env</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Smoke_tests___Portal_QA_env" class="navigator-link ">
+                    <span>C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation\src\main\java\TestSuites\SmokePortalQA.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Smoke_tests___Portal_QA_env" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Smoke_tests___Portal_QA_env" class="navigator-link ">
+                    <span>11 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Smoke_tests___Portal_QA_env" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Smoke_tests___Portal_QA_env" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Smoke_tests___Portal_QA_env" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Smoke_tests___Portal_QA_env" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">11 methods, 1 failed,  10 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Smoke_tests___Portal_QA_env" class="hide-methods failed suite-Smoke_tests___Portal_QA_env"> (hide)</a> <!-- hide-methods failed suite-Smoke_tests___Portal_QA_env -->
+                      <a href="#" panel-name="suite-Smoke_tests___Portal_QA_env" class="show-methods failed suite-Smoke_tests___Portal_QA_env"> (show)</a> <!-- show-methods failed suite-Smoke_tests___Portal_QA_env -->
+                    </span>
+                    <div class="method-list-content failed suite-Smoke_tests___Portal_QA_env">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_tests___Portal_QA_env" title="Tests.Environments.InitAndCleanupPortal" class="method navigator-link" hash-for-method="cleanupAgents">cleanupAgents</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Smoke_tests___Portal_QA_env -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Smoke_tests___Portal_QA_env" class="hide-methods skipped suite-Smoke_tests___Portal_QA_env"> (hide)</a> <!-- hide-methods skipped suite-Smoke_tests___Portal_QA_env -->
+                      <a href="#" panel-name="suite-Smoke_tests___Portal_QA_env" class="show-methods skipped suite-Smoke_tests___Portal_QA_env"> (show)</a> <!-- show-methods skipped suite-Smoke_tests___Portal_QA_env -->
+                    </span>
+                    <div class="method-list-content skipped suite-Smoke_tests___Portal_QA_env">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_tests___Portal_QA_env" title="Tests.Environments.CreateNewInstallers" class="method navigator-link" hash-for-method="CreateNewInstalllersAndDeleteOldInstallers">CreateNewInstalllersAndDeleteOldInstallers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_tests___Portal_QA_env" title="Tests.Environments.InstallEndPointEnvironmentsTest" class="method navigator-link" hash-for-method="InstallTest">InstallTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_tests___Portal_QA_env" title="Tests.Environments.ClientLogToPortalTest" class="method navigator-link" hash-for-method="SendLogsAndVerify">SendLogsAndVerify</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_tests___Portal_QA_env" title="Tests.Environments.VerifyEndPointOkAtPortalTest" class="method navigator-link" hash-for-method="VerifyEndPointStatusAtPortalTest">VerifyEndPointStatusAtPortalTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_tests___Portal_QA_env" title="Tests.LNE.ChangeCustomerConfAndVerify" class="method navigator-link" hash-for-method="changeCustomerConfAndVerify">changeCustomerConfAndVerify</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_tests___Portal_QA_env" title="Tests.LNE.DeleteEndpoint" class="method navigator-link" hash-for-method="deleteEndpoint">deleteEndpoint</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_tests___Portal_QA_env" title="Tests.Environments.DownloadInstallers" class="method navigator-link" hash-for-method="downloadInstallersFromFileCabinet">downloadInstallersFromFileCabinet</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_tests___Portal_QA_env" title="Tests.LNE.RevokeEndpoint" class="method navigator-link" hash-for-method="revokeEndpoint">revokeEndpoint</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_tests___Portal_QA_env" title="Tests.LNE.ClusterConfiguration" class="method navigator-link" hash-for-method="setClusterConfiguration">setClusterConfiguration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_tests___Portal_QA_env" title="Tests.LNE.StandaloneEPconfigurationVerify" class="method navigator-link" hash-for-method="verifyStandaloneEPconfiguration">verifyStandaloneEPconfiguration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Smoke_tests___Portal_QA_env -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Smoke_tests___Portal_QA_env" class="panel Smoke_tests___Portal_QA_env">
+          <div class="suite-Smoke_tests___Portal_QA_env-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Tests.Environments.InitAndCleanupPortal</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="cleanupAgents">
+                  </a> <!-- cleanupAgents -->
+                  <span class="method-name">cleanupAgents</span>
+                  <div class="stack-trace">java.lang.AssertionError: Could not select the specific cluster  at CentCom search page. cluster: yoyo
+java.lang.NullPointerException
+
+Video: C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation/test-output/capture/InitAndCleanupPortal-21-12-2020-18.15.33.avi
+ScreenShot: C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation/test-output/capture/InitAndCleanupPortal-21-12-2020-18.15.33.png
+
+
+	at Actions.BrowserActions.CreateNewCluster(BrowserActions.java:716)
+	at Tests.Environments.InitAndCleanupPortal.deleteEndpointFromCentCom(InitAndCleanupPortal.java:123)
+	at Tests.Environments.InitAndCleanupPortal.cleanupAgents(InitAndCleanupPortal.java:65)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at Utils.Main.RunTest.main(RunTest.java:116)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Smoke_tests___Portal_QA_env-class-failed -->
+          <div class="suite-Smoke_tests___Portal_QA_env-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">Tests.Environments.CreateNewInstallers</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreateNewInstalllersAndDeleteOldInstallers">
+                  </a> <!-- CreateNewInstalllersAndDeleteOldInstallers -->
+                  <span class="method-name">CreateNewInstalllersAndDeleteOldInstallers</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CreateNewInstallers.CreateNewInstalllersAndDeleteOldInstallers()[pri:0, instance:Tests.Environments.CreateNewInstallers@d176a31, instance params:[{Parameters Per Environment=QA, Wait for publish to be completed=180, Customer=TrustwaveEP Test#17}]] depends on not successfully finished methods in group &quot;InitAndCleanup&quot;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at Utils.Main.RunTest.main(RunTest.java:116)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Smoke_tests___Portal_QA_env-class-skipped -->
+          <div class="suite-Smoke_tests___Portal_QA_env-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">Tests.LNE.DeleteEndpoint</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteEndpoint">
+                  </a> <!-- deleteEndpoint -->
+                  <span class="method-name">deleteEndpoint</span>
+                  <div class="stack-trace">java.lang.Throwable: Method DeleteEndpoint.deleteEndpoint()[pri:10, instance:Tests.LNE.DeleteEndpoint@4d8126f, instance params:[{EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2008@, EP_Type_1=win, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.137}]] depends on not successfully finished methods in group &quot;InstallEP&quot;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at Utils.Main.RunTest.main(RunTest.java:116)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Smoke_tests___Portal_QA_env-class-skipped -->
+          <div class="suite-Smoke_tests___Portal_QA_env-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">Tests.Environments.InstallEndPointEnvironmentsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="InstallTest">
+                  </a> <!-- InstallTest -->
+                  <span class="method-name">InstallTest</span>
+                  <div class="stack-trace">java.lang.Throwable: Method InstallEndPointEnvironmentsTest.InstallTest()[pri:0, instance:Tests.Environments.InstallEndPointEnvironmentsTest@6d4a65c6, instance params:[{Installation timeout=180, From service start until logs show active timeout=180, EP_Type_1=win, EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2008@, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.137}]] depends on not successfully finished methods in group &quot;ChangeCustomerConfAndVerify&quot;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at Utils.Main.RunTest.main(RunTest.java:116)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Smoke_tests___Portal_QA_env-class-skipped -->
+          <div class="suite-Smoke_tests___Portal_QA_env-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">Tests.LNE.RevokeEndpoint</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="revokeEndpoint">
+                  </a> <!-- revokeEndpoint -->
+                  <span class="method-name">revokeEndpoint</span>
+                  <div class="stack-trace">java.lang.Throwable: Method RevokeEndpoint.revokeEndpoint()[pri:11, instance:Tests.LNE.RevokeEndpoint@dffa30b, instance params:[{EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2008@, EP_Type_1=win, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.137}]] depends on not successfully finished methods in group &quot;InstallEP&quot;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at Utils.Main.RunTest.main(RunTest.java:116)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Smoke_tests___Portal_QA_env-class-skipped -->
+          <div class="suite-Smoke_tests___Portal_QA_env-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">Tests.Environments.DownloadInstallers</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="downloadInstallersFromFileCabinet">
+                  </a> <!-- downloadInstallersFromFileCabinet -->
+                  <span class="method-name">downloadInstallersFromFileCabinet</span>
+                  <div class="stack-trace">java.lang.Throwable: Method DownloadInstallers.downloadInstallersFromFileCabinet()[pri:0, instance:Tests.Environments.DownloadInstallers@3a91d146, instance params:[{Parameters Per Environment=QA, Customer=TrustwaveEP Test#17, Wait because File is still being processed (virus scanned and stored)=900, Wait files to be downloaded timeout in seconds=600, Wait files ready to download timeout=600}]] depends on not successfully finished methods in group &quot;CreateNewInstallers&quot;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at Utils.Main.RunTest.main(RunTest.java:116)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Smoke_tests___Portal_QA_env-class-skipped -->
+          <div class="suite-Smoke_tests___Portal_QA_env-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">Tests.LNE.ClusterConfiguration</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="setClusterConfiguration">
+                  </a> <!-- setClusterConfiguration -->
+                  <span class="method-name">setClusterConfiguration</span>
+                  <div class="stack-trace">java.lang.Throwable: Method ClusterConfiguration.setClusterConfiguration()[pri:20, instance:Tests.LNE.ClusterConfiguration@392a04e7, instance params:[{EP_Type_1=win, EP_Type_2=win, EP_UserName_1=Moshe.Avidor, EP_Password_2=password, EP_UserName_2=user name, EP_Password_1=Smile2008@, EP_HostName_1=10.243.68.137, EP_Values_Populate_Method=All_EP_In_One_Row, EP_HostName_2=hostname}]] depends on not successfully finished methods in group &quot;InstallEP&quot;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at Utils.Main.RunTest.main(RunTest.java:116)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Smoke_tests___Portal_QA_env-class-skipped -->
+          <div class="suite-Smoke_tests___Portal_QA_env-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">Tests.LNE.ChangeCustomerConfAndVerify</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="changeCustomerConfAndVerify">
+                  </a> <!-- changeCustomerConfAndVerify -->
+                  <span class="method-name">changeCustomerConfAndVerify</span>
+                  <div class="stack-trace">java.lang.Throwable: Method ChangeCustomerConfAndVerify.changeCustomerConfAndVerify()[pri:20, instance:Tests.LNE.ChangeCustomerConfAndVerify@5965844d, instance params:[{EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2008@, EP_Type_1=win, EP_HostName_1=10.243.68.137, EP_Values_Populate_Method=All_EP_In_One_Row}]] depends on not successfully finished methods in group &quot;DownloadInstallers&quot;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at Utils.Main.RunTest.main(RunTest.java:116)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Smoke_tests___Portal_QA_env-class-skipped -->
+          <div class="suite-Smoke_tests___Portal_QA_env-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">Tests.Environments.ClientLogToPortalTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SendLogsAndVerify">
+                  </a> <!-- SendLogsAndVerify -->
+                  <span class="method-name">SendLogsAndVerify</span>
+                  <div class="stack-trace">java.lang.Throwable: Method ClientLogToPortalTest.SendLogsAndVerify()[pri:0, instance:Tests.Environments.ClientLogToPortalTest@4c98a6d5, instance params:[{Event Description=Hello!! this is the test info, Customer=TrustwaveEP Test#17, Log To Appear Timeout=1800, Event Log=APPLICATION, Fusion Password=P@ssw0rd1, EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2008@, Parameters Per Environment=QA, Fusion User Name=twSuperAdmin, Event ID=123, Add time stamp to description=Yes, Event Source=AutomationTest, Fusion Link=https://portal.qa.tw-test.net, EP_Type_1=win, Event Type=INFORMATION, Report Interval=30, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.137}]] depends on not successfully finished methods in group &quot;verify&quot;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at Utils.Main.RunTest.main(RunTest.java:116)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Smoke_tests___Portal_QA_env-class-skipped -->
+          <div class="suite-Smoke_tests___Portal_QA_env-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">Tests.Environments.VerifyEndPointOkAtPortalTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyEndPointStatusAtPortalTest">
+                  </a> <!-- VerifyEndPointStatusAtPortalTest -->
+                  <span class="method-name">VerifyEndPointStatusAtPortalTest</span>
+                  <div class="stack-trace">java.lang.Throwable: Method VerifyEndPointOkAtPortalTest.VerifyEndPointStatusAtPortalTest()[pri:0, instance:Tests.Environments.VerifyEndPointOkAtPortalTest@aa004a0, instance params:[{EP_Type_1=win, Customer=TrustwaveEP Test#17, EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2008@, Parameters Per Environment=QA, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.137, EP Appear At CentCom Timeout=120}]] depends on not successfully finished methods in group &quot;InstallEP&quot;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at Utils.Main.RunTest.main(RunTest.java:116)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Smoke_tests___Portal_QA_env-class-skipped -->
+          <div class="suite-Smoke_tests___Portal_QA_env-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">Tests.LNE.StandaloneEPconfigurationVerify</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyStandaloneEPconfiguration">
+                  </a> <!-- verifyStandaloneEPconfiguration -->
+                  <span class="method-name">verifyStandaloneEPconfiguration</span>
+                  <div class="stack-trace">java.lang.Throwable: Method StandaloneEPconfigurationVerify.verifyStandaloneEPconfiguration()[pri:20, instance:Tests.LNE.StandaloneEPconfigurationVerify@7f02251, instance params:[{StandAloneConfig=#REF!, EP_Type_1=win, EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2008@, EP_HostName_1=10.243.68.137, EP_Values_Populate_Method=All_EP_In_One_Row, Download timeout=180}]] depends on not successfully finished methods in group &quot;InstallEP&quot;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at Utils.Main.RunTest.main(RunTest.java:116)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Smoke_tests___Portal_QA_env-class-skipped -->
+        </div> <!-- panel Smoke_tests___Portal_QA_env -->
+        <div panel-name="test-xml-Smoke_tests___Portal_QA_env" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation\src\main\java\TestSuites\SmokePortalQA.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Smoke tests - Portal QA env&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Smoke tests - Portal QA env&quot;&gt;
+    &lt;groups&gt;
+      &lt;dependencies&gt;
+        &lt;group depends-on=&quot;InstallEP&quot; name=&quot;RevokeEndpoint&quot;/&gt;
+        &lt;group depends-on=&quot;CreateNewInstallers&quot; name=&quot;DownloadInstallers&quot;/&gt;
+        &lt;group depends-on=&quot;DownloadInstallers&quot; name=&quot;ChangeCustomerConfAndVerify&quot;/&gt;
+        &lt;group depends-on=&quot;InstallEP&quot; name=&quot;StandaloneEPconfiguration&quot;/&gt;
+        &lt;group depends-on=&quot;InstallEP&quot; name=&quot;verify&quot;/&gt;
+        &lt;group depends-on=&quot;ChangeCustomerConfAndVerify&quot; name=&quot;InstallEP&quot;/&gt;
+        &lt;group depends-on=&quot;InstallEP&quot; name=&quot;ClusterConfiguration&quot;/&gt;
+        &lt;group depends-on=&quot;InitAndCleanup&quot; name=&quot;CreateNewInstallers&quot;/&gt;
+        &lt;group depends-on=&quot;verify&quot; name=&quot;logs&quot;/&gt;
+        &lt;group depends-on=&quot;InstallEP&quot; name=&quot;DeleteEndpoint&quot;/&gt;
+      &lt;/dependencies&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Tests.Environments.InitAndCleanupPortal&quot;/&gt;
+      &lt;class name=&quot;Tests.Environments.CreateNewInstallers&quot;/&gt;
+      &lt;class name=&quot;Tests.Environments.DownloadInstallers&quot;/&gt;
+      &lt;class name=&quot;Tests.LNE.ChangeCustomerConfAndVerify&quot;/&gt;
+      &lt;class name=&quot;Tests.Environments.InstallEndPointEnvironmentsTest&quot;/&gt;
+      &lt;class name=&quot;Tests.Environments.VerifyEndPointOkAtPortalTest&quot;/&gt;
+      &lt;class name=&quot;Tests.Environments.ClientLogToPortalTest&quot;/&gt;
+      &lt;class name=&quot;Tests.LNE.ClusterConfiguration&quot;/&gt;
+      &lt;class name=&quot;Tests.LNE.StandaloneEPconfigurationVerify&quot;/&gt;
+      &lt;class name=&quot;Tests.LNE.RevokeEndpoint&quot;/&gt;
+      &lt;class name=&quot;Tests.LNE.DeleteEndpoint&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Smoke tests - Portal QA env --&gt;
+&lt;/suite&gt; &lt;!-- Smoke tests - Portal QA env --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Smoke_tests___Portal_QA_env" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Smoke tests - Portal QA env</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Smoke tests - Portal QA env (11 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Smoke_tests___Portal_QA_env" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Smoke tests - Portal QA env</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">ChangeCustomerConfAndVerify</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">changeCustomerConfAndVerify</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">ClusterConfiguration</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">setClusterConfiguration</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">CreateNewInstallers</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">CreateNewInstalllersAndDeleteOldInstallers</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">DeleteEndpoint</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">deleteEndpoint</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">DownloadInstallers</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">downloadInstallersFromFileCabinet</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">InitAndCleanup</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">cleanupAgents</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">InstallEP</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">InstallTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">RevokeEndpoint</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">revokeEndpoint</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">StandaloneEPconfiguration</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyStandaloneEPconfiguration</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">logs</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">SendLogsAndVerify</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">verify</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">VerifyEndPointStatusAtPortalTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Smoke_tests___Portal_QA_env" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Smoke tests - Portal QA env</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Smoke_tests___Portal_QA_env');
+function tableData_Smoke_tests___Portal_QA_env() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(11);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'cleanupAgents')
+data.setCell(0, 2, 'Tests.Environments.InitAndCleanupPortal')
+data.setCell(0, 3, 36668);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'CreateNewInstalllersAndDeleteOldInstallers')
+data.setCell(1, 2, 'Tests.Environments.CreateNewInstallers')
+data.setCell(1, 3, 0);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'changeCustomerConfAndVerify')
+data.setCell(2, 2, 'Tests.LNE.ChangeCustomerConfAndVerify')
+data.setCell(2, 3, 0);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'VerifyEndPointStatusAtPortalTest')
+data.setCell(3, 2, 'Tests.Environments.VerifyEndPointOkAtPortalTest')
+data.setCell(3, 3, 0);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'SendLogsAndVerify')
+data.setCell(4, 2, 'Tests.Environments.ClientLogToPortalTest')
+data.setCell(4, 3, 0);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'deleteEndpoint')
+data.setCell(5, 2, 'Tests.LNE.DeleteEndpoint')
+data.setCell(5, 3, 0);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'setClusterConfiguration')
+data.setCell(6, 2, 'Tests.LNE.ClusterConfiguration')
+data.setCell(6, 3, 0);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'revokeEndpoint')
+data.setCell(7, 2, 'Tests.LNE.RevokeEndpoint')
+data.setCell(7, 3, 0);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'InstallTest')
+data.setCell(8, 2, 'Tests.Environments.InstallEndPointEnvironmentsTest')
+data.setCell(8, 3, 0);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyStandaloneEPconfiguration')
+data.setCell(9, 2, 'Tests.LNE.StandaloneEPconfigurationVerify')
+data.setCell(9, 3, 0);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'downloadInstallersFromFileCabinet')
+data.setCell(10, 2, 'Tests.Environments.DownloadInstallers')
+data.setCell(10, 3, 0);
+window.suiteTableData['Smoke_tests___Portal_QA_env']= { tableData: data, tableDiv: 'times-div-Smoke_tests___Portal_QA_env'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 36 seconds</span>
+              <div id="times-div-Smoke_tests___Portal_QA_env">
+              </div> <!-- times-div-Smoke_tests___Portal_QA_env -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Smoke_tests___Portal_QA_env" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Smoke tests - Portal QA env</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Smoke_tests___Portal_QA_env" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Smoke_tests___Portal_QA_env" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.Environments.InitAndCleanupPortal</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">cleanupAgents</span>
+                <span class="method-start">23 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Close</span>
+                <span class="method-start">36702 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">38106 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.Environments.CreateNewInstallers</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">CreateNewInstalllersAndDeleteOldInstallers</span>
+                <span class="method-start">38114 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.Environments.DownloadInstallers</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">downloadInstallersFromFileCabinet</span>
+                <span class="method-start">38115 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.LNE.ChangeCustomerConfAndVerify</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">changeCustomerConfAndVerify</span>
+                <span class="method-start">38115 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.Environments.InstallEndPointEnvironmentsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">InstallTest</span>
+                <span class="method-start">38115 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.Environments.VerifyEndPointOkAtPortalTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyEndPointStatusAtPortalTest</span>
+                <span class="method-start">38116 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.Environments.ClientLogToPortalTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">SendLogsAndVerify</span>
+                <span class="method-start">38116 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.LNE.DeleteEndpoint</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">deleteEndpoint</span>
+                <span class="method-start">38116 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.LNE.RevokeEndpoint</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">revokeEndpoint</span>
+                <span class="method-start">38117 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.LNE.ClusterConfiguration</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">setClusterConfiguration</span>
+                <span class="method-start">38117 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.LNE.StandaloneEPconfigurationVerify</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyStandaloneEPconfiguration</span>
+                <span class="method-start">38117 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

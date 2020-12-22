@@ -1,0 +1,132 @@
+2020-12-14 18:18:13,566 DEBUG T.RecordedTest [main] screenshot file: C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation/test-output/capture/InitAndCleanupPortal-14-12-2020-18.18.13.png
+2020-12-14 18:18:13,574 INFO T.E.InitAndCleanupPortal [main] Starting Cleanup agents
+2020-12-14 18:18:19,825 INFO U.R.SSHManager [main] Connected Successfully to host 10.243.68.103
+2020-12-14 18:18:19,827 INFO U.R.SSHManager [main] Going to executing command: hostname
+2020-12-14 18:18:19,859 DEBUG U.R.SSHManager [main] Done.
+2020-12-14 18:18:23,722 INFO A.SimulatedAgentActions [main] SimulatedAgentActions, DS URL: https://endpoint-protection-services.qa.tw-test.net:443/
+2020-12-14 18:18:23,738 INFO T.E.InitAndCleanupPortal [main] Going to send delete action to Centcom for agent on hostanem NTY-EN-8D25HC2
+2020-12-14 18:18:23,738 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before switch application type: Chrome
+2020-12-14 18:18:23,739 DEBUG A.SeleniumBrowser [main] Setting Chrome driver location: C:/home/NepManagerDownloads/utils/chromedriver.exe
+2020-12-14 18:18:23,739 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new hashMap
+2020-12-14 18:18:23,740 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After reading MasterDownloadFolder property: C:\home\NepManagerDownloads
+2020-12-14 18:18:23,740 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After put to hash
+2020-12-14 18:18:23,747 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After new chrome options
+2020-12-14 18:18:23,749 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After chrome setExperimentalOption
+2020-12-14 18:18:23,751 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before setting several chrome options
+2020-12-14 18:18:23,756 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before creating new chrome driver
+2020-12-14 18:18:28,123 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new chrome driver
+2020-12-14 18:18:28,131 DEBUG A.SeleniumBrowser [main] After Setting implicit timeout
+2020-12-14 18:18:30,249 DEBUG A.SeleniumBrowser [main] After maximizing window 
+2020-12-14 18:18:30,249 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2020-12-14 18:18:30,250 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2020-12-14 18:18:30,250 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net
+2020-12-14 18:18:38,385 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net
+2020-12-14 18:18:39,846 DEBUG A.BrowserActions [main] Waiting for login button to be clickable...
+2020-12-14 18:18:39,997 DEBUG A.BrowserActions [main] Login button clicked successfully...
+2020-12-14 18:18:41,885 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2020-12-14 18:18:41,885 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2020-12-14 18:18:41,886 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2020-12-14 18:18:42,259 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2020-12-14 18:29:36,207 DEBUG T.RecordedTest [main] screenshot file: C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation/test-output/capture/InitAndCleanupPortal-14-12-2020-18.29.36.png
+2020-12-14 18:29:36,214 INFO T.E.InitAndCleanupPortal [main] Starting Cleanup agents
+2020-12-14 18:29:41,923 INFO U.R.SSHManager [main] Connected Successfully to host 10.243.68.103
+2020-12-14 18:29:41,925 INFO U.R.SSHManager [main] Going to executing command: hostname
+2020-12-14 18:29:41,958 DEBUG U.R.SSHManager [main] Done.
+2020-12-14 18:29:45,766 INFO A.SimulatedAgentActions [main] SimulatedAgentActions, DS URL: https://endpoint-protection-services.qa.tw-test.net:443/
+2020-12-14 18:29:45,784 INFO T.E.InitAndCleanupPortal [main] Going to send delete action to Centcom for agent on hostanem NTY-EN-8D25HC2
+2020-12-14 18:29:45,785 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before switch application type: Chrome
+2020-12-14 18:29:45,785 DEBUG A.SeleniumBrowser [main] Setting Chrome driver location: C:/home/NepManagerDownloads/utils/chromedriver.exe
+2020-12-14 18:29:45,786 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new hashMap
+2020-12-14 18:29:45,786 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After reading MasterDownloadFolder property: C:\home\NepManagerDownloads
+2020-12-14 18:29:45,787 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After put to hash
+2020-12-14 18:29:45,794 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After new chrome options
+2020-12-14 18:29:45,797 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After chrome setExperimentalOption
+2020-12-14 18:29:45,797 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before setting several chrome options
+2020-12-14 18:29:45,807 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before creating new chrome driver
+2020-12-14 18:29:51,589 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new chrome driver
+2020-12-14 18:29:51,597 DEBUG A.SeleniumBrowser [main] After Setting implicit timeout
+2020-12-14 18:29:53,613 DEBUG A.SeleniumBrowser [main] After maximizing window 
+2020-12-14 18:29:53,613 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2020-12-14 18:29:53,614 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2020-12-14 18:29:53,614 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net
+2020-12-14 18:29:58,863 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net
+2020-12-14 18:30:00,454 DEBUG A.BrowserActions [main] Waiting for login button to be clickable...
+2020-12-14 18:30:00,632 DEBUG A.BrowserActions [main] Login button clicked successfully...
+2020-12-14 18:30:03,526 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2020-12-14 18:30:03,526 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2020-12-14 18:30:03,526 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2020-12-14 18:30:03,864 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2020-12-14 18:30:17,979 ERROR A.BrowserActions [main] Could not select the specific cluster  at CentCom search page. cluster: TrustwaveEP Test#17
+org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression twa-button[@aria-lable='OK'/material-button because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'twa-button[@aria-lable='OK'/material-button' is not a valid XPath expression.
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NTY-EN-8D25HC2', ip: '10.243.68.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\MOSHE~1.AVI\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:53438}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 589c3f9aca20d2f7c1d98ed4ff10939f
+*** Element info: {Using=xpath, value=twa-button[@aria-lable='OK'/material-button}
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353) ~[selenium-api-3.141.59.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69) ~[selenium-support-3.141.59.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-3.141.59.jar:?]
+	at com.sun.proxy.$Proxy30.click(Unknown Source) ~[?:?]
+	at Actions.BrowserActions.CreateNewCluster(BrowserActions.java:698) ~[classes/:?]
+	at Tests.Environments.InitAndCleanupPortal.deleteEndpointFromCentCom(InitAndCleanupPortal.java:122) ~[classes/:?]
+	at Tests.Environments.InitAndCleanupPortal.cleanupAgents(InitAndCleanupPortal.java:65) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.1.0.jar:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1540) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:766) [testng-7.1.0.jar:?]
+	at org.testng.TestRunner.run(TestRunner.java:587) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96) [testng-7.1.0.jar:?]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187) [testng-7.1.0.jar:?]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109) [testng-7.1.0.jar:?]
+	at org.testng.TestNG.runSuites(TestNG.java:1039) [testng-7.1.0.jar:?]
+	at org.testng.TestNG.run(TestNG.java:1007) [testng-7.1.0.jar:?]
+	at Utils.Main.RunTest.main(RunTest.java:116) [classes/:?]
+2020-12-14 18:30:17,996 ERROR U.T.InvokedMethodListener [main] Could not select the specific cluster  at CentCom search page. cluster: TrustwaveEP Test#17
+org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression twa-button[@aria-lable='OK'/material-button because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'twa-button[@aria-lable='OK'/material-button' is not a valid XPath expression.
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NTY-EN-8D25HC2', ip: '10.243.68.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\MOSHE~1.AVI\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:53438}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 589c3f9aca20d2f7c1d98ed4ff10939f
+*** Element info: {Using=xpath, value=twa-button[@aria-lable='OK'/material-button}
+
+Video: C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation/test-output/capture/InitAndCleanupPortal-14-12-2020-18.29.36.avi
+ScreenShot: C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation/test-output/capture/InitAndCleanupPortal-14-12-2020-18.29.36.png
+
+
