@@ -53,6 +53,7 @@ public class InitAndCleanupPortal extends RecordedTest {
         
         agent = AgentActionsFactory.getAgentActions(data.get("EP_Type_1"), data.get("EP_HostName_1"), data.get("EP_UserName_1"), data.get("EP_Password_1"));
         String epName = agent.getEpName();
+        String epCluster = agent.getEpCluster();
         String uuid = getDbConnector().getUuidByName(epName, customerId);
         if (epName == null || epName.isEmpty()) {
         	JLog.logger.warn("EP name is null, skipping cleanup!");
@@ -62,8 +63,10 @@ public class InitAndCleanupPortal extends RecordedTest {
         simulatedAgentForDelete = new SimulatedAgentActions(getGeneralData().get("DS Name"), customerId);
         
         JLog.logger.info("Going to send delete action to Centcom for agent on hostanem {}", epName);
-        boolean deletedInUI = deleteEndpointFromCentCom(epName);
-        
+       // boolean deletedInUI = deleteEndpointFromCentCom(epName);
+        boolean deletedInUI = CreateNewClusterActions(epName,epCluster);
+
+
         if (deletedInUI) {
         	JLog.logger.info("Agent was found and delete action was done in Centcom, going to wait until service is uninstalled from agent");
         	verifyServiceUninstalledOrForceUninstall(Integer.parseInt(getGeneralData().get("EP Installation timeout")));
@@ -108,6 +111,33 @@ public class InitAndCleanupPortal extends RecordedTest {
      * Delete the endpoint with name 'hostname' from Centcom UI
      * Returns - true if an endpoint with this name was found, else otherwise 
      */
+
+        private boolean CreateNewClusterActions (String ClusterName,String hostname) {
+            try {
+                browserActions.LaunchApplication(getGeneralData().get("Browser"));
+                browserActions.SetApplicationUrl(getGeneralData().get("Fusion Link"));
+
+                browserActions.Login(getGeneralData().get("Fusion User Name"), getGeneralData().get("Fusion Password"));
+
+                browserActions.GotoCentComSearch(getGeneralData().get("Fusion Link"));
+
+                browserActions.GotoCentComEndpointsPage(data.get("Customer"));
+
+
+               browserActions.CreateNewCluster(data.get("Cluster"),String.valueOf(data.get("hostname")));
+
+                return browserActions.CreateNewCluster(hostname,ClusterName);
+
+            } catch (Exception e) {
+                org.testng.Assert.fail("Could not delete endpoint from CentCom: " + "\n" + e.toString(), e);
+                return false;
+            }
+        }
+
+
+
+
+
     private boolean deleteEndpointFromCentCom (String hostname) {
         try {
 	        browserActions.LaunchApplication(getGeneralData().get("Browser"));
@@ -119,8 +149,6 @@ public class InitAndCleanupPortal extends RecordedTest {
 
 	        browserActions.GotoCentComEndpointsPage(data.get("Customer"));
 
-           // browserActions.CreateNewCluster(data.get("Customer"));
-            browserActions.CreateNewCluster(data.get("Cluster"));
 
 	        return browserActions.DeleteEpFromCentCom(hostname);
         }

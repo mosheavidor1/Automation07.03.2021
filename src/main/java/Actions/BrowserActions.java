@@ -39,7 +39,6 @@ public class BrowserActions extends ManagerActions {
     private static final int ServiceStartStopTimeout = 180;
 
 
-
     public BrowserActions() {
         application = SeleniumBrowser.GetInstance();
     }
@@ -53,8 +52,7 @@ public class BrowserActions extends ManagerActions {
     }
 
 
-    public void SetApplicationUrl(String Url)
-    {
+    public void SetApplicationUrl(String Url) {
         application.LoadUrl(Url);
     }
 
@@ -90,25 +88,23 @@ public class BrowserActions extends ManagerActions {
             login.Password.SetText(password);
             JLog.logger.debug("Waiting for login button to be clickable...");
             login.WaitUntilPageLoad();
-            login.WaitUntilObjectClickable(login.loginButtonBy,60);
+            login.WaitUntilObjectClickable(login.loginButtonBy, 60);
             login.LoginButton.click();
             JLog.logger.debug("Login button clicked successfully...");
 
             //wait until page load
-            dash.WaitUntilObjectClickable(DashboardPage.dashboradByID,120);
-        }
-        catch (Exception e){
-        	JLog.logger.error("Login exception.", e);
+            dash.WaitUntilObjectClickable(DashboardPage.dashboradByID, 120);
+        } catch (Exception e) {
+            JLog.logger.error("Login exception.", e);
         }
 
     }
 
 
-
     //verify log entry message appears at the portal
     public void VerifyMessageExistsInPortal(LogEntry entry, String hostname, int timeoutForLogEntryToAppearInSeconds) {
         try {
-            JLog.logger.debug("Starting VerifyMessageExistsInPortal with timeout: " +timeoutForLogEntryToAppearInSeconds + " seconds");
+            JLog.logger.debug("Starting VerifyMessageExistsInPortal with timeout: " + timeoutForLogEntryToAppearInSeconds + " seconds");
             EventExplorerPage eventPage = new EventExplorerPage();
             final String filteredItemsText = "Filtered Items";
 
@@ -144,7 +140,7 @@ public class BrowserActions extends ManagerActions {
             LocalDateTime current = start;
             Duration durationTimeout = Duration.ofSeconds(timeoutForLogEntryToAppearInSeconds);
 
-            JLog.logger.info("Waiting for event to appear at event explorer for: "+ timeoutForLogEntryToAppearInSeconds + " seconds");
+            JLog.logger.info("Waiting for event to appear at event explorer for: " + timeoutForLogEntryToAppearInSeconds + " seconds");
             while (durationTimeout.compareTo(Duration.between(start, current)) > 0) {
                 eventPage.searchBox_element.clear();
 
@@ -195,9 +191,8 @@ public class BrowserActions extends ManagerActions {
             String foundID = logEntryFoundAtPortal.substring(startOfEventID, end);
             if (foundID.compareToIgnoreCase(entry.eventID) != 0)
                 org.testng.Assert.fail("Event written to log: " + entry.eventID + " Is not matched to the event ID found at portal: " + foundID);
-        }
-        catch (Exception e) {
-        	JLog.logger.error("Could not verify log entry appear at portal.", e);
+        } catch (Exception e) {
+            JLog.logger.error("Could not verify log entry appear at portal.", e);
             org.testng.Assert.fail("Could not verify log entry appear at portal. " + "\n" + e.toString());
         }
 
@@ -217,9 +212,9 @@ public class BrowserActions extends ManagerActions {
 
             //close alert button popup
             //Temporarily waiting for alert box to disappear until fixing this issue better
-            Thread.sleep(10*1000);
+            Thread.sleep(10 * 1000);
             UpperMenu upper = new UpperMenu();
-            if(upper.IsElementExist(upper.alretBoxCloseBy)){
+            if (upper.IsElementExist(upper.alretBoxCloseBy)) {
                 upper.alretBoxCloseButton.click();
             }
 
@@ -227,9 +222,8 @@ public class BrowserActions extends ManagerActions {
             detailsPage.openConfiguration_element.click();
 
             PublishConfiguration(waitForPublishInSec);
-        }
-        catch (Exception e) {
-        	JLog.logger.error("Could not publish new downloads for customer: {}",customerName, e);
+        } catch (Exception e) {
+            JLog.logger.error("Could not publish new downloads for customer: {}", customerName, e);
             org.testng.Assert.fail("Could not publish new downloads for customer: " + customerName + "\n" + e.toString());
         }
 
@@ -245,9 +239,8 @@ public class BrowserActions extends ManagerActions {
             //Put here code for changing configuration
 
             PublishConfiguration(waitForPublishInSec);
-        }
-        catch (Exception e) {
-        	JLog.logger.error("Could not change configuration and publish for customer: {}",customerName, e);
+        } catch (Exception e) {
+            JLog.logger.error("Could not change configuration and publish for customer: {}", customerName, e);
             org.testng.Assert.fail("Could not change configuration and publish for customer: " + customerName + "\n" + e.toString());
         }
 
@@ -267,9 +260,8 @@ public class BrowserActions extends ManagerActions {
             centSearch.WaitUntilObjectClickable(centSearch.GetCustomerRowBy(customerName));
 
             centSearch.GetCustomerRow(customerName).click();
-        }
-        catch (Exception e) {
-        	JLog.logger.error("Could not select customer at CentCom search page. customer: {}",customerName, e);
+        } catch (Exception e) {
+            JLog.logger.error("Could not select customer at CentCom search page. customer: {}", customerName, e);
             org.testng.Assert.fail("Could not select customer at CentCom search page. customer: " + customerName + "\n" + e.toString());
         }
 
@@ -293,13 +285,12 @@ public class BrowserActions extends ManagerActions {
                 Thread.sleep(5000);
                 current = LocalDateTime.now();
 
-                if(conf.IsElementExist(conf.refreshBy)) {
+                if (conf.IsElementExist(conf.refreshBy)) {
                     try {
                         conf.refreshButton_element.click();
-                        JLog.logger.info("Refresh button of publish configuration clicked successfully: "+ conf.refreshBy.toString() );
-                    }
-                    catch (Exception e) {
-                        JLog.logger.warn("Could not click the refresh button of publish configuration: " + e.toString() +"\nRefresh button:"+ conf.refreshBy.toString() );
+                        JLog.logger.info("Refresh button of publish configuration clicked successfully: " + conf.refreshBy.toString());
+                    } catch (Exception e) {
+                        JLog.logger.warn("Could not click the refresh button of publish configuration: " + e.toString() + "\nRefresh button:" + conf.refreshBy.toString());
                     }
                 }
 
@@ -311,9 +302,8 @@ public class BrowserActions extends ManagerActions {
 
             if (!found)
                 org.testng.Assert.fail("Publish configuration not completed successfully. Could not find publish completed \"100%\" indication after timeout of: " + waitForPublishInSec + "(sec) See screenshot/video links below");
-        }
-        catch (Exception e) {
-        	JLog.logger.error("Could not publish configuration", e);
+        } catch (Exception e) {
+            JLog.logger.error("Could not publish configuration", e);
             org.testng.Assert.fail("Could not publish configuration" + "\n" + e.toString());
         }
 
@@ -336,15 +326,14 @@ public class BrowserActions extends ManagerActions {
 
             detailsPage.endPointTab_element.click();
 
-        }
-        catch (Exception e) {
-        	JLog.logger.error("Could not check endpoint status at CentCom for customer: {}", customerName, e);
-            org.testng.Assert.fail("Could not check endpoint status at CentCom for customer: " + customerName +  "\n" + e.toString());
+        } catch (Exception e) {
+            JLog.logger.error("Could not check endpoint status at CentCom for customer: {}", customerName, e);
+            org.testng.Assert.fail("Could not check endpoint status at CentCom for customer: " + customerName + "\n" + e.toString());
         }
 
     }
 
-    public void CheckEndPointOkInCentCom(String hostname,int timeout) {
+    public void CheckEndPointOkInCentCom(String hostname, int timeout) {
         try {
             CentComSearchDetailsPage detailsPage = new CentComSearchDetailsPage();
 
@@ -373,11 +362,11 @@ public class BrowserActions extends ManagerActions {
                     found = true;
                     break;
                 }
-                JLog.logger.debug("Waiting for endpoint to appear OK at portal. EP name: "+ hostname);
+                JLog.logger.debug("Waiting for endpoint to appear OK at portal. EP name: " + hostname);
             }
 
             if (!found) {
-                org.testng.Assert.fail("Could not find endpoint name: " + hostname +" at CentCom after timeout(sec): " + timeout + " . See screenshot attached");
+                org.testng.Assert.fail("Could not find endpoint name: " + hostname + " at CentCom after timeout(sec): " + timeout + " . See screenshot attached");
             }
 
             if (!detailsPage.IsElementExist(detailsPage.OkBy)) {
@@ -386,14 +375,12 @@ public class BrowserActions extends ManagerActions {
 
             JLog.logger.info("Status OK found at CentCom for endpoint: " + hostname);
 
-        }
-        catch (Exception e) {
-        	JLog.logger.error("Could not check endpoint status at CentCom for hostname: {}", hostname, e);
-            org.testng.Assert.fail("Could not check endpoint status at CentCom for hostname: " + hostname +  "\n" + e.toString());
+        } catch (Exception e) {
+            JLog.logger.error("Could not check endpoint status at CentCom for hostname: {}", hostname, e);
+            org.testng.Assert.fail("Could not check endpoint status at CentCom for hostname: " + hostname + "\n" + e.toString());
         }
 
     }
-
 
 
     public void SelectCustomer(String customerName) {
@@ -434,9 +421,8 @@ public class BrowserActions extends ManagerActions {
             up.customerName.click();
             JLog.logger.debug("customerName - After click ");
 
-        }
-        catch (Exception e) {
-        	JLog.logger.error("Could not select customer at portal. Customer: {}", customerName, e);
+        } catch (Exception e) {
+            JLog.logger.error("Could not select customer at portal. Customer: {}", customerName, e);
             org.testng.Assert.fail("Could not select customer at portal. Customer: " + customerName + "\n" + e.toString());
         }
 
@@ -473,7 +459,7 @@ public class BrowserActions extends ManagerActions {
                 fc.removeButtonConfirm_element.click();
             }
         } catch (Exception e) {
-        	JLog.logger.error("Could not delete all endpoint downloads at portal.", e);
+            JLog.logger.error("Could not delete all endpoint downloads at portal.", e);
             org.testng.Assert.fail("Could not delete all endpoint downloads at portal." + "\n" + e.toString());
         }
 
@@ -497,38 +483,36 @@ public class BrowserActions extends ManagerActions {
 
             LocalDateTime start = LocalDateTime.now();
 
-            WaitForInstallerToAppearAtFileCabinet(fc.endPointLnxBy,start, fileToAppearTimeoutString);
-            WaitForInstallerToAppearAtFileCabinet(fc.endPointExeBy,start, fileToAppearTimeoutString);
+            WaitForInstallerToAppearAtFileCabinet(fc.endPointLnxBy, start, fileToAppearTimeoutString);
+            WaitForInstallerToAppearAtFileCabinet(fc.endPointExeBy, start, fileToAppearTimeoutString);
 
             start = LocalDateTime.now();
             LocalDateTime current;
             Duration durationTimeout = Duration.ofSeconds(Long.parseLong(fileStoredAndVirusScanTimeoutString));
-            DownloadInstaller(fc.TrustwaveEndpointLnx_element, fc.endPointLnxBy,fileStoredAndVirusScanTimeoutString);
+            DownloadInstaller(fc.TrustwaveEndpointLnx_element, fc.endPointLnxBy, fileStoredAndVirusScanTimeoutString);
 
             current = LocalDateTime.now();
-            durationTimeout = durationTimeout.minus(Duration.between(start,current));
-            DownloadInstaller(fc.TrustwaveEndpointExe_element, fc.endPointExeBy,String.valueOf(durationTimeout.toMillis()/1000));
+            durationTimeout = durationTimeout.minus(Duration.between(start, current));
+            DownloadInstaller(fc.TrustwaveEndpointExe_element, fc.endPointExeBy, String.valueOf(durationTimeout.toMillis() / 1000));
 
             current = LocalDateTime.now();
-            durationTimeout = durationTimeout.minus(Duration.between(start,current));
-            DownloadInstaller(fc.TrustwaveEndpointUbuntu_element, fc.endPointUbuntuBy,String.valueOf(durationTimeout.toMillis()/1000));
+            durationTimeout = durationTimeout.minus(Duration.between(start, current));
+            DownloadInstaller(fc.TrustwaveEndpointUbuntu_element, fc.endPointUbuntuBy, String.valueOf(durationTimeout.toMillis() / 1000));
 
             current = LocalDateTime.now();
-            durationTimeout = durationTimeout.minus(Duration.between(start,current));
-            DownloadInstaller(fc.TrustwaveEndpointMsi_element, fc.endPointMsiBy,String.valueOf(durationTimeout.toMillis()/1000));
+            durationTimeout = durationTimeout.minus(Duration.between(start, current));
+            DownloadInstaller(fc.TrustwaveEndpointMsi_element, fc.endPointMsiBy, String.valueOf(durationTimeout.toMillis() / 1000));
 
 
-        }
-        catch (Exception e) {
-        	JLog.logger.error("Could not download endpoint installation files", e);
+        } catch (Exception e) {
+            JLog.logger.error("Could not download endpoint installation files", e);
             org.testng.Assert.fail("Could not download endpoint installation files" + "\n" + e.toString());
         }
 
     }
 
 
-
-    private void WaitForInstallerToAppearAtFileCabinet( By installerLinkBy, LocalDateTime start, String fileToAppearTimeoutString) {
+    private void WaitForInstallerToAppearAtFileCabinet(By installerLinkBy, LocalDateTime start, String fileToAppearTimeoutString) {
         try {
 
             int fileToAppearTimeout = Integer.parseInt(fileToAppearTimeoutString);
@@ -561,14 +545,12 @@ public class BrowserActions extends ManagerActions {
             if (!found) {
                 org.testng.Assert.fail("Download failed. Installation file did not appeared at File Cabinet after timeout: " + fileToAppearTimeoutString + " seconds. See screenshot file.");
             }
-        }
-        catch (Exception e) {
-        	JLog.logger.error("Could not download endpoint installation files", e);
+        } catch (Exception e) {
+            JLog.logger.error("Could not download endpoint installation files", e);
             org.testng.Assert.fail("Could not download endpoint installation files" + "\n" + e.toString());
         }
 
     }
-
 
 
     private void DownloadInstaller(WebElement installerLink, By installerLinkBy, String fileStoredAndVirusScanTimeoutString) {
@@ -586,7 +568,7 @@ public class BrowserActions extends ManagerActions {
 
             while (durationTimeout.compareTo(Duration.between(start, current)) > 0) {
 
-                if(fc.IsElementExist(installerLinkBy)) {
+                if (fc.IsElementExist(installerLinkBy)) {
                     installerAppear = true;
                     fc.WaitUntilObjectClickable(installerLinkBy);
                     installerLink.click();
@@ -610,16 +592,15 @@ public class BrowserActions extends ManagerActions {
 
             }
 
-            if (installerAppear==false) {
-                org.testng.Assert.fail("Installer link did not appeared at file cabinet:  "+ installerLinkBy + " .After timeout: "+ fileStoredAndVirusScanTimeoutString);
+            if (installerAppear == false) {
+                org.testng.Assert.fail("Installer link did not appeared at file cabinet:  " + installerLinkBy + " .After timeout: " + fileStoredAndVirusScanTimeoutString);
             }
 
             if (errorMessageAppear) {
                 org.testng.Assert.fail("Message appears: File is still being processed (virus scanned and stored). after timeout: " + fileStoredAndVirusScanTimeoutString + " seconds. Timeout reached test failed.");
             }
-        }
-        catch (Exception e) {
-        	JLog.logger.error("Could not download endpoint installation files", e);
+        } catch (Exception e) {
+            JLog.logger.error("Could not download endpoint installation files", e);
             org.testng.Assert.fail("Could not download endpoint installation files" + "\n" + e.toString());
         }
 
@@ -627,7 +608,7 @@ public class BrowserActions extends ManagerActions {
 
     /**
      * Delete the endpoint with name 'hostname' from Centcom UI
-     * Returns - true if an endpoint with this name was found, else otherwise 
+     * Returns - true if an endpoint with this name was found, else otherwise
      */
     public boolean DeleteEpFromCentCom(String hostname) {
         try {
@@ -652,7 +633,7 @@ public class BrowserActions extends ManagerActions {
             Thread.sleep(3000); //after all 3 wait above needs some more - to be investigated
 
             if (!detailsPage.IsElementExist(epLineBy)) {
-                JLog.logger.warn("Could not find the following EP at CentCom: "+ hostname);
+                JLog.logger.warn("Could not find the following EP at CentCom: " + hostname);
                 return false;
             }
 
@@ -675,51 +656,169 @@ public class BrowserActions extends ManagerActions {
             detailsPage.WaitUntilObjectDisappear(epLineBy);
 
             if (detailsPage.IsElementExist(epLineBy)) {
-                org.testng.Assert.fail("After deleting endpoint from CentCom the ep still appears at CentCom EP name: " + hostname );
+                org.testng.Assert.fail("After deleting endpoint from CentCom the ep still appears at CentCom EP name: " + hostname);
             }
 
             JLog.logger.info("Successfully deleted endpoint: " + hostname);
 
-        }
-        catch (Exception e) {
-            org.testng.Assert.fail("Could not delete from CentCom endpoint: " + hostname +  "\n" + e.toString());
+        } catch (Exception e) {
+            org.testng.Assert.fail("Could not delete from CentCom endpoint: " + hostname + "\n" + e.toString());
         }
         return true;
 
     }
 
 
-    public void CreateNewCluster(String ClusterName) {
+    public boolean CreateNewCluster(String ClusterName,String hostname) {
+
+
         try {
 
             CentComNewClusterPage CentComCluster = new CentComNewClusterPage();
-            CentComCluster.clustersTab_element.click();
+
+               CentComCluster.clustersTab_element.click();
 
 
-           CentComCluster.clustersPlusSign_element.click();
+
+            // In case of creating a new cluster(when cluster does not exists)
+            Thread.sleep(3000);
 
 
-         CentComCluster.setClusterName_element.sendKeys(ClusterName);
+            if (!CentComCluster.IsElementExist(CentComCluster.GetClusterNameBy(ClusterName))) {
+                CentComCluster.WaitUntilPageLoad();
+                CentComCluster.WaitUntilPageLoad();
 
-          CentComCluster.WaitUntilObjectClickable(CentComCluster.ClickTheOkBy);
-           CentComCluster.ClusterOKButton_element.click();
+
+            CentComCluster.clustersPlusSign_element.click();
+
+                    CentComCluster.setClusterName_element.sendKeys(ClusterName);
 
 
-            CentComCluster.WaitUntilObjectClickable(CentComCluster.GetClusterNameBy(ClusterName));
+                    CentComCluster.WaitUntilObjectClickable(CentComCluster.ClickTheOkBy);
+                    CentComCluster.ClusterOKButton_element.click();
 
-            CentComCluster.GetClusterName(ClusterName).click();
+                    CentComCluster.WaitUntilObjectClickable(CentComCluster.GetClusterNameBy(ClusterName));
 
-            JLog.logger.info("Successfully Selected the specific cluster : " + ClusterName);
+                    CentComCluster.GetClusterName(ClusterName).click();
+
+                    Thread.sleep(3000);
+
+                    CentComCluster.ClusterGearButton.click();
+
+                    CentComCluster.publishButton_element.click();
+
+                    Thread.sleep(3000);
+                    CentComCluster.continueButton_element.click();
+
+                    Thread.sleep(3000);
+                CentComCluster.ViewDetails.click();
+                Thread.sleep(3000);
+
+                CentComCluster.Customer_Details.click();
+
+Thread.sleep(3000);
+
+                CentComCluster.clustersTab_element.click();
+                Thread.sleep(5000);
+
+                CentComCluster.GetClusterName(ClusterName).click();
+                CentComCluster.AssignEPToClusterButton.click();
+                if(CentComCluster.IsElementExist(CentComCluster.GetClusterNameBy(hostname))) {
+                    CentComCluster.GetHostNameRowWebElement(hostname).click();
+
+                    CentComCluster.EndPointCheckBox.click();
+
+                    Thread.sleep(3000);
+                    CentComCluster.Assign_Button.click();
+                    Thread.sleep(3000);
+                    CentComCluster.Close_Button.click();
+                    Thread.sleep(3000);
+                    CentComCluster.Details_Button.click();
+
+                    CentComCluster.endPointTab_element.click();
+                    Thread.sleep(3000);
+                    CentComCluster.Customer_Details.click();
+                    Thread.sleep(3000);
+                    CentComCluster.endPointTab_element.click();
+
+                }
+                else{
+                    CentComCluster.Close_Button.click();
+                    Thread.sleep(3000);
+                    CentComCluster.Details_Button.click();
+                    Thread.sleep(3000);
+
+                    CentComCluster.endPointTab_element.click();
+                    Thread.sleep(3000);
+                    CentComCluster.Customer_Details.click();
+                    Thread.sleep(3000);
+                    CentComCluster.endPointTab_element.click();
+
+
+                }
+
+                    JLog.logger.info("Successfully created a new cluster : " + ClusterName);      //In case this cluster name is new:
+
+
+                return false;
+            }
+
+
+            // In case the cluster is already exists
+
+  CentComCluster.WaitUntilObjectClickable(CentComCluster.GetClusterNameBy(ClusterName));
+          CentComCluster.GetClusterName(ClusterName).click();
+          CentComCluster.AssignEPToClusterButton.click();
+          //CentComCluster.WaitUntilObjectClickable(CentComCluster.GetHostNameRowBy(hostname));
+          Thread.sleep(3000);
+          if(CentComCluster.IsElementExist(CentComCluster.GetClusterNameBy(hostname))) {
+          CentComCluster.GetHostNameRowWebElement(hostname).click();
+
+              CentComCluster.EndPointCheckBox.click();
+
+          Thread.sleep(3000);
+          CentComCluster.Assign_Button.click();
+          Thread.sleep(3000);
+          CentComCluster.Close_Button.click();
+          Thread.sleep(5000);
+          CentComCluster.Details_Button.click();
+
+              Thread.sleep(3000);
+
+              CentComCluster.endPointTab_element.click();
+
+              Thread.sleep(3000);
+
+              CentComCluster.Customer_Details.click();
+
+              Thread.sleep(3000);
+              CentComCluster.endPointTab_element.click();
+
+          }else {
+          CentComCluster.Close_Button.click();
+          Thread.sleep(3000);
+          CentComCluster.Details_Button.click();
+          Thread.sleep(3000);
+
+          CentComCluster.endPointTab_element.click();
+              Thread.sleep(3000);
+              CentComCluster.Customer_Details.click();
+              Thread.sleep(3000);
+              CentComCluster.endPointTab_element.click();
+          }
+
+          JLog.logger.error("Cluster is already exists");
+
+
 
 
         } catch (Exception e) {
-             JLog.logger.error("Could not select the specific cluster  at CentCom search page. cluster: {}", ClusterName, e);
-             org.testng.Assert.fail("Could not select the specific cluster  at CentCom search page. cluster: " + ClusterName + "\n" + e.toString());
+            JLog.logger.error("Could not select the specific cluster  at CentCom search page. cluster: {}", ClusterName, e);
+            //   org.testng.Assert.fail("Could not select the specific cluster  at CentCom search page. cluster: " + ClusterName + "\n" + e.toString());
+
+
         }
-
+        return true;
     }
+
 }
-
-
-
-

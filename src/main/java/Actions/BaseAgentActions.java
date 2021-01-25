@@ -30,7 +30,7 @@ public abstract class BaseAgentActions implements AgentActionsInterface{
     public static final String hostsFileIngressRedirection = "siem-ingress.trustwave.com";
     public static final char hostsFileCommentChar = '#';
 
-	protected String epIp, epUserName, epPassword, epName;
+	protected String epIp, epUserName, epPassword, epName,epCluster;
     protected SSHManager connection;
     public static final int connection_port =22;
     private static final String command_enable_proxy = " -proxy ";
@@ -471,6 +471,20 @@ public abstract class BaseAgentActions implements AgentActionsInterface{
         }
         return epName;
     }
+
+    public String getEpCluster() {
+        if (epCluster != null) {
+            return epCluster;
+        }
+        String comm = "Cluster";
+        String result = connection.Execute(comm);
+
+        if (null != result){
+            epCluster = result.replaceAll("^\n+", "");
+        }
+        return epCluster;
+    }
+
 
 
 

@@ -82,6 +82,7 @@ public class InitAndCleanup extends GenericTest {
         
         JLog.logger.info("Going to check if agent exists.");
         String epName = agentActions.getEpName();
+        String epCluster = agentActions.getEpCluster();
         
         if (epName == null || epName.isEmpty()) {
         	JLog.logger.info("EP name is null, skipping cleanup!");
