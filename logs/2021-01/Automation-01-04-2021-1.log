@@ -1,0 +1,52 @@
+2021-01-04 16:08:13,334 DEBUG T.RecordedTest [main] screenshot file: C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation/test-output/capture/InitAndCleanupPortal-04-01-2021-16.08.13.png
+2021-01-04 16:08:13,364 INFO T.E.InitAndCleanupPortal [main] Starting Cleanup agents
+2021-01-04 16:08:34,486 ERROR U.T.InvokedMethodListener [main] Could not create SSH connection to machine: 10.243.68.169  user name: Moshe.Avidor password: Smile2008@ port number: 22
+com.jcraft.jsch.JSchException: java.net.ConnectException: Connection timed out: connect
+
+Video: C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation/test-output/capture/InitAndCleanupPortal-04-01-2021-16.08.13.avi
+
+
+2021-01-04 16:09:07,245 DEBUG T.RecordedTest [main] screenshot file: C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation/test-output/capture/InitAndCleanupPortal-04-01-2021-16.09.07.png
+2021-01-04 16:09:07,253 INFO T.E.InitAndCleanupPortal [main] Starting Cleanup agents
+2021-01-04 16:09:28,297 ERROR U.T.InvokedMethodListener [main] Could not create SSH connection to machine: 10.243.68.169  user name: Moshe.Avidor password: Smile2008@ port number: 22
+com.jcraft.jsch.JSchException: java.net.ConnectException: Connection timed out: connect
+
+Video: C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation/test-output/capture/InitAndCleanupPortal-04-01-2021-16.09.07.avi
+
+
+2021-01-04 16:10:32,928 DEBUG T.RecordedTest [main] screenshot file: C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation/test-output/capture/InitAndCleanupPortal-04-01-2021-16.10.32.png
+2021-01-04 16:10:32,942 INFO T.E.InitAndCleanupPortal [main] Starting Cleanup agents
+2021-01-04 16:10:40,565 INFO U.R.SSHManager [main] Connected Successfully to host 10.243.68.181
+2021-01-04 16:10:40,568 INFO U.R.SSHManager [main] Going to executing command: hostname
+2021-01-04 16:10:40,605 DEBUG U.R.SSHManager [main] Done.
+2021-01-04 16:10:45,088 INFO A.SimulatedAgentActions [main] SimulatedAgentActions, DS URL: https://endpoint-protection-services.qa.tw-test.net:443/
+2021-01-04 16:10:45,191 INFO T.E.InitAndCleanupPortal [main] Going to send delete action to Centcom for agent on hostanem NTY-EN-8D25HC2
+2021-01-04 16:10:45,191 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before switch application type: Chrome
+2021-01-04 16:10:45,192 DEBUG A.SeleniumBrowser [main] Setting Chrome driver location: C:/home/NepManagerDownloads/utils/chromedriver.exe
+2021-01-04 16:10:45,193 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new hashMap
+2021-01-04 16:10:45,194 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After reading MasterDownloadFolder property: C:\home\NepManagerDownloads
+2021-01-04 16:10:45,195 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After put to hash
+2021-01-04 16:10:45,199 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After new chrome options
+2021-01-04 16:10:45,202 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After chrome setExperimentalOption
+2021-01-04 16:10:45,202 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before setting several chrome options
+2021-01-04 16:10:45,250 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before creating new chrome driver
+2021-01-04 16:10:56,096 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new chrome driver
+2021-01-04 16:10:56,298 DEBUG A.SeleniumBrowser [main] After Setting implicit timeout
+2021-01-04 16:10:58,388 DEBUG A.SeleniumBrowser [main] After maximizing window 
+2021-01-04 16:10:58,388 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2021-01-04 16:10:58,388 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2021-01-04 16:10:58,388 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net
+2021-01-04 16:11:04,509 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net
+2021-01-04 16:11:06,922 DEBUG A.BrowserActions [main] Waiting for login button to be clickable...
+2021-01-04 16:11:07,103 DEBUG A.BrowserActions [main] Login button clicked successfully...
+2021-01-04 16:11:09,018 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2021-01-04 16:11:09,018 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2021-01-04 16:11:09,018 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2021-01-04 16:11:09,562 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2021-01-04 16:11:34,296 ERROR A.BrowserActions [main] Cluster is already exists
+2021-01-04 16:11:34,310 ERROR U.T.InvokedMethodListener [main] Cluster is already exists
+
+Video: C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation/test-output/capture/InitAndCleanupPortal-04-01-2021-16.10.32.avi
+ScreenShot: C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation/test-output/capture/InitAndCleanupPortal-04-01-2021-16.10.32.png
+
+
