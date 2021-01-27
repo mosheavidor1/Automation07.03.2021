@@ -669,95 +669,140 @@ public class BrowserActions extends ManagerActions {
     }
 
 
-    public boolean CreateNewCluster(String ClusterName,String hostname) {
+    public boolean CreateNewCluster(String ClusterName, String hostname) {
 
 
         try {
 
             CentComNewClusterPage CentComCluster = new CentComNewClusterPage();
 
-               CentComCluster.clustersTab_element.click();
-
+            CentComCluster.clustersTab_element.click();
 
 
             // In case of creating a new cluster(when cluster does not exists)
-            Thread.sleep(3000);
-
-
-            if (!CentComCluster.IsElementExist(CentComCluster.GetClusterNameBy(ClusterName))) {
-                CentComCluster.WaitUntilPageLoad();
-                CentComCluster.WaitUntilPageLoad();
-
-
-            CentComCluster.clustersPlusSign_element.click();
-
-                    CentComCluster.setClusterName_element.sendKeys(ClusterName);
-
-
-                    CentComCluster.WaitUntilObjectClickable(CentComCluster.ClickTheOkBy);
-                    CentComCluster.ClusterOKButton_element.click();
-
-                    CentComCluster.WaitUntilObjectClickable(CentComCluster.GetClusterNameBy(ClusterName));
-
-                    CentComCluster.GetClusterName(ClusterName).click();
-
-                    Thread.sleep(3000);
-
-                    CentComCluster.ClusterGearButton.click();
-
-                    CentComCluster.publishButton_element.click();
-
-                    Thread.sleep(3000);
-                    CentComCluster.continueButton_element.click();
-
-                    Thread.sleep(3000);
-                CentComCluster.ViewDetails.click();
-                Thread.sleep(3000);
-
-                CentComCluster.Customer_Details.click();
 
 Thread.sleep(3000);
 
-                CentComCluster.clustersTab_element.click();
-                Thread.sleep(5000);
+            if (!CentComCluster.IsElementExist(CentComCluster.GetClusterNameBy(ClusterName))) {
+
+
+           CentComCluster.WaitUntilObjectClickable(CentComCluster.ClickOnPlusSignBy);
+                CentComCluster.ClickOnPlusSign_element.click();
+
+
+
+                CentComCluster.setClusterName_element.sendKeys(ClusterName);
+
+
+                CentComCluster.WaitUntilObjectClickable(CentComCluster.ClickTheOkBy);
+                CentComCluster.ClusterOKButton_element.click();
+
+                CentComCluster.WaitUntilObjectClickable(CentComCluster.GetClusterNameBy(ClusterName));
 
                 CentComCluster.GetClusterName(ClusterName).click();
-                CentComCluster.AssignEPToClusterButton.click();
-                if(CentComCluster.IsElementExist(CentComCluster.GetClusterNameBy(hostname))) {
-                    CentComCluster.GetHostNameRowWebElement(hostname).click();
 
+
+                CentComCluster.WaitUntilObjectClickable(CentComCluster.ClickTheGearBy);
+              CentComCluster.ClusterGearButton.click();
+
+              CentComCluster.WaitUntilPageLoad();
+              CentComCluster.WaitUntilPageLoad();
+
+CentComCluster.WaitUntilObjectClickable(CentComCluster.publishBy);
+                CentComCluster.publishButton_element.click();
+
+               CentComCluster.WaitUntilObjectClickable(CentComCluster.ContinueBy);
+                CentComCluster.continueButton_element.click();
+             //   CentComCluster.WaitUntilObjectDisappear(CentComCluster.ContinueBy);
+
+
+                CentComCluster.WaitUntilObjectClickable(CentComCluster.ClickOnViewDetailsBy);
+                CentComCluster.ViewDetails.click();
+
+                CentComCluster.WaitUntilPageLoad();
+                CentComCluster.WaitUntilPageLoad();
+
+                CentComCluster.WaitUntilObjectClickable(CentComCluster.ClickOnCustomerDetailsBy);
+                CentComCluster.Customer_Details.click();
+
+                CentComCluster.WaitUntilObjectClickable(CentComCluster.ClickOnClusterTabBy);
+                CentComCluster.clustersTab_element.click();
+
+
+                CentComCluster.WaitUntilObjectClickable(CentComCluster.GetClusterNameBy(ClusterName));
+                CentComCluster.GetClusterName(ClusterName).click();
+
+Thread.sleep(3000);
+CentComCluster.WaitUntilObjectClickable(CentComCluster.ClickTheAssignBy);
+                CentComCluster.AssignEPToClusterButton.click();
+
+
+Thread.sleep(3000);
+                if (CentComCluster.IsElementExist(CentComCluster.GetClusterNameBy(hostname))) {
+                    CentComCluster.GetHostNameRowWebElement(hostname).click();
+                    Thread.sleep(3000);
+
+
+CentComCluster.WaitUntilObjectClickable(CentComCluster.ClickOnEndPointCheckBoxBy);
                     CentComCluster.EndPointCheckBox.click();
 
-                    Thread.sleep(3000);
+
+CentComCluster.WaitUntilObjectClickable(CentComCluster.ClickOnAssignButtonBy);
                     CentComCluster.Assign_Button.click();
-                    Thread.sleep(3000);
+
+
+CentComCluster.WaitUntilObjectClickable(CentComCluster.ClickOnCloseButtonBy);
                     CentComCluster.Close_Button.click();
+
+                 //   CentComCluster.WaitUntilObjectDisappear(CentComCluster.ClickOnCloseButtonBy);
+
                     Thread.sleep(3000);
+
+                    if (CentComCluster.IsElementExist(CentComCluster.GetClusterNameBy(hostname))) {
+                        CentComCluster.GetHostNameRowWebElement(hostname).click();
+                    }
+
+
+
+CentComCluster.WaitUntilObjectClickable(CentComCluster.ClickOnDetailsButtonBy);
                     CentComCluster.Details_Button.click();
 
-                    CentComCluster.endPointTab_element.click();
-                    Thread.sleep(3000);
-                    CentComCluster.Customer_Details.click();
-                    Thread.sleep(3000);
+                    CentComCluster.WaitUntilPageLoad();
+                    CentComCluster.WaitUntilPageLoad();
+
+                    CentComCluster.WaitUntilObjectClickable(CentComCluster.ClickOnEndPointTabBy);
                     CentComCluster.endPointTab_element.click();
 
-                }
-                else{
+
+
+                    if (CentComCluster.IsElementExist(CentComCluster.GetClusterNameBy(hostname))) {
+                        CentComCluster.GetHostNameRowWebElement(hostname).click();
+
+CentComCluster.WaitUntilObjectClickable(CentComCluster.ClickOnActionItemBy);
+                        CentComCluster.ActionItem.click();
+
+                    CentComCluster.WaitUntilObjectClickable(CentComCluster.ClickOnRemoveClusterBy);
+                        CentComCluster.RemoveCluster.click();
+
+                    }
+
+
+                } else {
                     CentComCluster.Close_Button.click();
-                    Thread.sleep(3000);
+            ;
                     CentComCluster.Details_Button.click();
-                    Thread.sleep(3000);
+
 
                     CentComCluster.endPointTab_element.click();
-                    Thread.sleep(3000);
+
                     CentComCluster.Customer_Details.click();
-                    Thread.sleep(3000);
+
                     CentComCluster.endPointTab_element.click();
 
 
                 }
 
-                    JLog.logger.info("Successfully created a new cluster : " + ClusterName);      //In case this cluster name is new:
+                JLog.logger.info("Successfully created a new cluster : " + ClusterName);      //In case this cluster name is new:
 
 
                 return false;
@@ -766,51 +811,69 @@ Thread.sleep(3000);
 
             // In case the cluster is already exists
 
-  CentComCluster.WaitUntilObjectClickable(CentComCluster.GetClusterNameBy(ClusterName));
-          CentComCluster.GetClusterName(ClusterName).click();
-          CentComCluster.AssignEPToClusterButton.click();
-          //CentComCluster.WaitUntilObjectClickable(CentComCluster.GetHostNameRowBy(hostname));
-          Thread.sleep(3000);
-          if(CentComCluster.IsElementExist(CentComCluster.GetClusterNameBy(hostname))) {
-          CentComCluster.GetHostNameRowWebElement(hostname).click();
 
-              CentComCluster.EndPointCheckBox.click();
+            CentComCluster.WaitUntilObjectClickable(CentComCluster.GetClusterNameBy(ClusterName));
+            CentComCluster.GetClusterName(ClusterName).click();
 
-          Thread.sleep(3000);
-          CentComCluster.Assign_Button.click();
-          Thread.sleep(3000);
-          CentComCluster.Close_Button.click();
-          Thread.sleep(5000);
-          CentComCluster.Details_Button.click();
+            CentComCluster.WaitUntilObjectClickable(CentComCluster.ClickTheAssignBy);
 
-              Thread.sleep(3000);
+            CentComCluster.AssignEPToClusterButton.click();
 
-              CentComCluster.endPointTab_element.click();
+            Thread.sleep(3000);
 
-              Thread.sleep(3000);
+            if (CentComCluster.IsElementExist(CentComCluster.GetClusterNameBy(hostname))) {
+                CentComCluster.GetHostNameRowWebElement(hostname).click();
 
-              CentComCluster.Customer_Details.click();
+                Thread.sleep(3000);
 
-              Thread.sleep(3000);
-              CentComCluster.endPointTab_element.click();
+                CentComCluster.EndPointCheckBox.click();
 
-          }else {
-          CentComCluster.Close_Button.click();
-          Thread.sleep(3000);
-          CentComCluster.Details_Button.click();
-          Thread.sleep(3000);
+                Thread.sleep(3000);
 
-          CentComCluster.endPointTab_element.click();
-              Thread.sleep(3000);
-              CentComCluster.Customer_Details.click();
-              Thread.sleep(3000);
-              CentComCluster.endPointTab_element.click();
-          }
+                CentComCluster.Assign_Button.click();
 
-          JLog.logger.error("Cluster is already exists");
+                Thread.sleep(3000);
+                CentComCluster.Close_Button.click();
+                Thread.sleep(3000);
+
+                CentComCluster.Details_Button.click();
+
+                Thread.sleep(3000);
+
+                CentComCluster.endPointTab_element.click();
+                Thread.sleep(3000);
+
+                CentComCluster.Customer_Details.click();
+                Thread.sleep(3000);
+
+                CentComCluster.endPointTab_element.click();
+
+                Thread.sleep(3000);
+                if (CentComCluster.IsElementExist(CentComCluster.GetClusterNameBy(hostname))) {
+                    CentComCluster.GetHostNameRowWebElement(hostname).click();
+                }
+                    Thread.sleep(3000);
+                CentComCluster.ActionItem.click();
+                Thread.sleep(3000);
+                CentComCluster.RemoveCluster.click();
+                Thread.sleep(3000);
 
 
+            } else {
+                CentComCluster.Close_Button.click();
 
+                CentComCluster.Details_Button.click();
+
+
+                CentComCluster.endPointTab_element.click();
+
+                CentComCluster.Customer_Details.click();
+
+                CentComCluster.endPointTab_element.click();
+
+
+                JLog.logger.error("Cluster is already exists");
+            }
 
         } catch (Exception e) {
             JLog.logger.error("Could not select the specific cluster  at CentCom search page. cluster: {}", ClusterName, e);
@@ -822,3 +885,4 @@ Thread.sleep(3000);
     }
 
 }
+

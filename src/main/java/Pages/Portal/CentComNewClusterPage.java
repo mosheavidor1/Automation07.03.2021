@@ -13,13 +13,19 @@ import org.openqa.selenium.support.How;
 
 
        //clusters tab
-       @FindBy(how = How.XPATH, using = "//div[contains(text(),'Clusters')]")
+
+       private static final String ClickOnClusterTab = "//div[contains(text(),'Clusters')]";
+       public static final By ClickOnClusterTabBy = By.xpath(ClickOnClusterTab);
+       @FindBy(how = How.XPATH, using = ClickOnClusterTab)
        public WebElement clustersTab_element;
 
+
        //click on plus sign
-       @FindBy(how = How.XPATH, using = "//twa-button[@icon='tw-plus']/material-button")
-       //@FindBy(how = How.XPATH, using = "//twa-button[@tooltip='Open Configuration']/material-button")
-       public WebElement clustersPlusSign_element;
+       //private static final String ClickOnPlusSign = "//twa-button[@icon='tw-plus']/material-button)";
+       private static final String ClickOnPlusSign = "//twa-button[@icon='tw-plus']";
+       public static final By ClickOnPlusSignBy = By.xpath(ClickOnPlusSign);
+       @FindBy(how = How.XPATH, using = ClickOnPlusSign)
+       public WebElement ClickOnPlusSign_element;
 
 
        //New cluster name
@@ -42,7 +48,6 @@ import org.openqa.selenium.support.How;
 //Click on configuration Gear:
 
        private static final String ClickOnConfGear = "//twa-button[@tooltip='Open Configuration']/material-button";
-
        public static final By ClickTheGearBy = By.xpath(ClickOnConfGear);
        @FindBy(how = How.XPATH, using = ClickOnConfGear)
        public WebElement ClusterGearButton;
@@ -51,10 +56,11 @@ import org.openqa.selenium.support.How;
        //Click on Assign new cluster :
 
        private static final String ClickOnAssign = "//twa-button[@tooltip='Assign Endpoints']/material-button";
-
        public static final By ClickTheAssignBy = By.xpath(ClickOnAssign);
        @FindBy(how = How.XPATH, using = ClickOnAssign)
        public WebElement AssignEPToClusterButton;
+
+
 
 
        //Click on Publish
@@ -65,8 +71,9 @@ import org.openqa.selenium.support.How;
        public WebElement publishButton_element;
 
        //Click on Continue
-
-       @FindBy(how = How.XPATH, using = "//div[@class='pane modal visible']//twa-button[@aria-label='Continue']")
+private static  final  String ClickOnContinue="//div[@class='pane modal visible']//twa-button[@aria-label='Continue']";
+public  static  final By ContinueBy=By.xpath(ClickOnContinue);
+       @FindBy(how = How.XPATH, using =ClickOnContinue )
        public WebElement continueButton_element;
 
 
@@ -106,42 +113,79 @@ import org.openqa.selenium.support.How;
 
 
     //Click on checkbox next to added end point
-       @FindBy(how = How.XPATH, using = "//*[@id=\"default-acx-overlay-container\"]/div[52]/material-dialog/focus-trap/div[2]/div/main/div/div/twa-table/div[3]/twa-table-row[4]/div[1]/twa-table-checkbox/div/span[1]")
+
+       private static final String ClickOnEndPointCheckBox = "//*[@id=\"default-acx-overlay-container\"]/div[72]/material-dialog/focus-trap/div[2]/div/main/div/div/twa-table/div[3]/twa-table-row[2]/div[1]/twa-table-checkbox/div/span[1]";
+       public static final By ClickOnEndPointCheckBoxBy = By.xpath(ClickOnEndPointCheckBox);
+       @FindBy(how = How.XPATH, using = ClickOnEndPointCheckBox)
        public WebElement EndPointCheckBox;
 
        //Assign Button
-       @FindBy(how = How.XPATH, using = "//div[@class='pane modal visible']//twa-button[@aria-label='Assign']")
+
+       private static final String ClickOnAssignButton = "//div[@class='pane modal visible']//twa-button[@aria-label='Assign']";
+       public static final By ClickOnAssignButtonBy = By.xpath(ClickOnAssignButton);
+       @FindBy(how = How.XPATH, using = ClickOnAssignButton)
        public WebElement Assign_Button;
 
 
 // Click on Close button in a case if end point is already exists on the cluster
-       @FindBy(how = How.XPATH, using = "//div[@class='pane modal visible']//twa-button[@aria-label='Close']")
+
+       private static final String ClickOnCloseButton = "//div[@class='pane modal visible']//twa-button[@aria-label='Close']";
+       public static final By ClickOnCloseButtonBy = By.xpath(ClickOnCloseButton);
+       @FindBy(how = How.XPATH, using = ClickOnCloseButton)
        public WebElement Close_Button;
 
        // Details button
 
-       @FindBy(how = How.XPATH, using = "//twa-table-action-details")
+
+       private static final String ClickOnDetailsButton = "//twa-table-action-details";
+       public static final By ClickOnDetailsButtonBy = By.xpath(ClickOnDetailsButton);
+       @FindBy(how = How.XPATH, using = ClickOnDetailsButton)
        public WebElement Details_Button;
 
 //// End points tab
-       @FindBy(how= How.XPATH,using="//div[normalize-space(text())='Endpoints']")
+
+       private static final String ClickOnEndPointTab = "//div[normalize-space(text())='Endpoints']";
+       public static final By ClickOnEndPointTabBy = By.xpath(ClickOnEndPointTab);
+       @FindBy(how = How.XPATH, using = ClickOnEndPointTab)
        public WebElement endPointTab_element;
 
        //View Customer Details button
 
-       @FindBy(how= How.XPATH,using="//span[contains(text(),'Customer Details')]")
+
+       private static final String ClickOnCustomerDetails = "//span[contains(text(),'Customer Details')]";
+       public static final By ClickOnCustomerDetailsBy = By.xpath(ClickOnCustomerDetails);
+       @FindBy(how = How.XPATH, using = ClickOnCustomerDetails)
        public WebElement Customer_Details;
+
+
+
 
        //View details button - after first configuration of new cluster:
 
-       @FindBy(how= How.XPATH,using="//span[contains(text(),'view details')]")
+       private static final String ClickOnViewDetails = "//span[contains(text(),'view details')]";
+       public static final By ClickOnViewDetailsBy = By.xpath(ClickOnViewDetails);
+       @FindBy(how = How.XPATH, using = ClickOnViewDetails)
        public WebElement ViewDetails;
 
 
+       //Click on Action Item to open Action item dialog box.
 
+       private static final String ClickOnActionItem = "//twa-menu[@twatooltip=\"Actions\"]";
+       public static final By ClickOnActionItemBy = By.xpath(ClickOnActionItem);
+       @FindBy(how = How.XPATH, using = ClickOnActionItem)
+       public WebElement ActionItem;
+
+
+       //Click on Remove cluster if  exists.
+
+       private static final String ClickOnRemoveCluster = "//span[contains(text(),'Remove from Cluster')]";
+       public static final By ClickOnRemoveClusterBy = By.xpath(ClickOnRemoveCluster);
+       @FindBy(how = How.XPATH, using = ClickOnRemoveCluster)
+       public WebElement RemoveCluster;
 
 
 
 
    }
 
+//e
