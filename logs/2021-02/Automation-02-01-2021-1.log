@@ -1,0 +1,1248 @@
+2021-02-01 11:12:39,782 DEBUG T.RecordedTest [main] screenshot file: C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation/test-output/capture/InitAndCleanupPortal-01-02-2021-11.12.39.png
+2021-02-01 11:12:39,823 INFO T.E.InitAndCleanupPortal [main] Starting Cleanup agents
+2021-02-01 11:12:48,462 INFO U.R.SSHManager [main] Connected Successfully to host 10.243.68.245
+2021-02-01 11:12:48,464 INFO U.R.SSHManager [main] Going to executing command: hostname
+2021-02-01 11:12:48,643 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 11:12:48,644 INFO U.R.SSHManager [main] Going to executing command: Cluster
+2021-02-01 11:12:48,682 WARN U.R.SSHManager [main] Error response: 
+'Cluster' is not recognized as an internal or external command,
+operable program or batch file.
+2021-02-01 11:12:55,991 INFO A.SimulatedAgentActions [main] SimulatedAgentActions, DS URL: https://endpoint-protection-services.qa.tw-test.net:443/
+2021-02-01 11:12:56,028 INFO T.E.InitAndCleanupPortal [main] Going to send delete action to Centcom for agent on hostanem NTY-EN-8D25HC2
+2021-02-01 11:12:56,029 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before switch application type: Chrome
+2021-02-01 11:12:56,029 DEBUG A.SeleniumBrowser [main] Setting Chrome driver location: C:/home/NepManagerDownloads/utils/chromedriver.exe
+2021-02-01 11:12:56,029 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new hashMap
+2021-02-01 11:12:56,030 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After reading MasterDownloadFolder property: C:\home\NepManagerDownloads
+2021-02-01 11:12:56,030 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After put to hash
+2021-02-01 11:12:56,037 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After new chrome options
+2021-02-01 11:12:56,040 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After chrome setExperimentalOption
+2021-02-01 11:12:56,040 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before setting several chrome options
+2021-02-01 11:12:56,061 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before creating new chrome driver
+2021-02-01 11:13:06,669 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new chrome driver
+2021-02-01 11:13:06,714 DEBUG A.SeleniumBrowser [main] After Setting implicit timeout
+2021-02-01 11:13:09,024 DEBUG A.SeleniumBrowser [main] After maximizing window 
+2021-02-01 11:13:09,024 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2021-02-01 11:13:09,024 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2021-02-01 11:13:09,025 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net
+2021-02-01 11:13:14,412 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net
+2021-02-01 11:13:16,289 DEBUG A.BrowserActions [main] Waiting for login button to be clickable...
+2021-02-01 11:13:16,489 DEBUG A.BrowserActions [main] Login button clicked successfully...
+2021-02-01 11:13:34,567 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2021-02-01 11:13:34,567 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2021-02-01 11:13:34,568 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2021-02-01 11:13:34,895 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2021-02-01 11:14:15,165 ERROR A.BrowserActions [main] Cluster is already exists
+2021-02-01 11:14:29,339 ERROR A.BrowserActions [main] Cluster is already exists
+2021-02-01 11:14:29,340 INFO T.E.InitAndCleanupPortal [main] Agent was found and delete action was done in Centcom, going to wait until service is uninstalled from agent
+2021-02-01 11:14:34,341 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 11:14:34,408 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 11:14:34,409 INFO A.BaseAgentActions [main] Endpoint service was stopped!
+2021-02-01 11:14:34,409 DEBUG A.BaseAgentActions [main] Agent Service was not found after uninstall
+2021-02-01 11:14:34,409 INFO U.R.SSHManager [main] Going to executing command: tasklist
+2021-02-01 11:14:34,946 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 11:14:34,947 DEBUG A.BaseAgentActions [main] Agent process was not found after uninstall
+2021-02-01 11:14:34,947 INFO T.E.InitAndCleanupPortal [main] Done. Service is not running on agent
+2021-02-01 11:14:36,378 DEBUG T.RecordedTest [main] screenshot file: C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation/test-output/capture/CreateNewInstallers-01-02-2021-11.14.36.png
+2021-02-01 11:14:36,379 INFO T.E.CreateNewInstallers [main] Starting Create New Installers...
+2021-02-01 11:14:36,379 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before switch application type: Chrome
+2021-02-01 11:14:36,380 DEBUG A.SeleniumBrowser [main] Setting Chrome driver location: C:/home/NepManagerDownloads/utils/chromedriver.exe
+2021-02-01 11:14:36,380 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new hashMap
+2021-02-01 11:14:36,380 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After reading MasterDownloadFolder property: C:\home\NepManagerDownloads
+2021-02-01 11:14:36,380 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After put to hash
+2021-02-01 11:14:36,381 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After new chrome options
+2021-02-01 11:14:36,381 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After chrome setExperimentalOption
+2021-02-01 11:14:36,381 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before setting several chrome options
+2021-02-01 11:14:36,381 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before creating new chrome driver
+2021-02-01 11:14:39,943 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new chrome driver
+2021-02-01 11:14:39,946 DEBUG A.SeleniumBrowser [main] After Setting implicit timeout
+2021-02-01 11:14:41,960 DEBUG A.SeleniumBrowser [main] After maximizing window 
+2021-02-01 11:14:41,961 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2021-02-01 11:14:41,961 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2021-02-01 11:14:41,961 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net
+2021-02-01 11:14:48,416 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net
+2021-02-01 11:31:26,055 DEBUG T.RecordedTest [main] screenshot file: C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation/test-output/capture/InitAndCleanupPortal-01-02-2021-11.31.26.png
+2021-02-01 11:31:26,063 INFO T.E.InitAndCleanupPortal [main] Starting Cleanup agents
+2021-02-01 11:31:32,614 INFO U.R.SSHManager [main] Connected Successfully to host 10.243.68.245
+2021-02-01 11:31:32,617 INFO U.R.SSHManager [main] Going to executing command: hostname
+2021-02-01 11:31:32,647 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 11:31:32,647 INFO U.R.SSHManager [main] Going to executing command: Cluster
+2021-02-01 11:31:32,660 WARN U.R.SSHManager [main] Error response: 
+'Cluster' is not recognized as an internal or external command,
+operable program or batch file.
+2021-02-01 11:31:36,402 INFO A.SimulatedAgentActions [main] SimulatedAgentActions, DS URL: https://endpoint-protection-services.qa.tw-test.net:443/
+2021-02-01 11:31:36,422 INFO T.E.InitAndCleanupPortal [main] Going to send delete action to Centcom for agent on hostanem NTY-EN-8D25HC2
+2021-02-01 11:31:36,423 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before switch application type: Chrome
+2021-02-01 11:31:36,423 DEBUG A.SeleniumBrowser [main] Setting Chrome driver location: C:/home/NepManagerDownloads/utils/chromedriver.exe
+2021-02-01 11:31:36,424 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new hashMap
+2021-02-01 11:31:36,425 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After reading MasterDownloadFolder property: C:\home\NepManagerDownloads
+2021-02-01 11:31:36,425 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After put to hash
+2021-02-01 11:31:36,431 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After new chrome options
+2021-02-01 11:31:36,434 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After chrome setExperimentalOption
+2021-02-01 11:31:36,434 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before setting several chrome options
+2021-02-01 11:31:36,443 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before creating new chrome driver
+2021-02-01 11:31:40,915 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new chrome driver
+2021-02-01 11:31:40,925 DEBUG A.SeleniumBrowser [main] After Setting implicit timeout
+2021-02-01 11:31:42,939 DEBUG A.SeleniumBrowser [main] After maximizing window 
+2021-02-01 11:31:42,939 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2021-02-01 11:31:42,940 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2021-02-01 11:31:42,940 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net
+2021-02-01 11:31:49,339 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net
+2021-02-01 11:31:51,106 DEBUG A.BrowserActions [main] Waiting for login button to be clickable...
+2021-02-01 11:31:51,285 DEBUG A.BrowserActions [main] Login button clicked successfully...
+2021-02-01 11:31:54,285 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2021-02-01 11:31:54,286 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2021-02-01 11:31:54,286 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2021-02-01 11:31:55,218 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2021-02-01 11:43:35,349 DEBUG T.RecordedTest [main] screenshot file: C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation/test-output/capture/InitAndCleanupPortal-01-02-2021-11.43.35.png
+2021-02-01 11:43:35,379 INFO T.E.InitAndCleanupPortal [main] Starting Cleanup agents
+2021-02-01 11:43:41,251 INFO U.R.SSHManager [main] Connected Successfully to host 10.243.68.245
+2021-02-01 11:43:41,256 INFO U.R.SSHManager [main] Going to executing command: hostname
+2021-02-01 11:43:41,293 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 11:43:41,294 INFO U.R.SSHManager [main] Going to executing command: Cluster
+2021-02-01 11:43:41,312 WARN U.R.SSHManager [main] Error response: 
+'Cluster' is not recognized as an internal or external command,
+operable program or batch file.
+2021-02-01 11:43:45,025 INFO A.SimulatedAgentActions [main] SimulatedAgentActions, DS URL: https://endpoint-protection-services.qa.tw-test.net:443/
+2021-02-01 11:43:45,042 INFO T.E.InitAndCleanupPortal [main] Going to send delete action to Centcom for agent on hostanem NTY-EN-8D25HC2
+2021-02-01 11:43:45,042 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before switch application type: Chrome
+2021-02-01 11:43:45,043 DEBUG A.SeleniumBrowser [main] Setting Chrome driver location: C:/home/NepManagerDownloads/utils/chromedriver.exe
+2021-02-01 11:43:45,043 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new hashMap
+2021-02-01 11:43:45,044 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After reading MasterDownloadFolder property: C:\home\NepManagerDownloads
+2021-02-01 11:43:45,044 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After put to hash
+2021-02-01 11:43:45,050 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After new chrome options
+2021-02-01 11:43:45,052 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After chrome setExperimentalOption
+2021-02-01 11:43:45,052 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before setting several chrome options
+2021-02-01 11:43:45,060 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before creating new chrome driver
+2021-02-01 11:43:49,189 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new chrome driver
+2021-02-01 11:43:49,198 DEBUG A.SeleniumBrowser [main] After Setting implicit timeout
+2021-02-01 11:43:51,215 DEBUG A.SeleniumBrowser [main] After maximizing window 
+2021-02-01 11:43:51,215 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2021-02-01 11:43:51,215 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2021-02-01 11:43:51,216 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net
+2021-02-01 11:43:55,938 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net
+2021-02-01 11:43:57,705 DEBUG A.BrowserActions [main] Waiting for login button to be clickable...
+2021-02-01 11:43:57,953 DEBUG A.BrowserActions [main] Login button clicked successfully...
+2021-02-01 11:44:04,271 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2021-02-01 11:44:04,272 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2021-02-01 11:44:04,272 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2021-02-01 11:44:04,630 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2021-02-01 11:48:05,403 DEBUG T.RecordedTest [main] screenshot file: C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation/test-output/capture/InitAndCleanupPortal-01-02-2021-11.48.05.png
+2021-02-01 11:48:05,414 INFO T.E.InitAndCleanupPortal [main] Starting Cleanup agents
+2021-02-01 11:48:10,608 INFO U.R.SSHManager [main] Connected Successfully to host 10.243.68.245
+2021-02-01 11:48:10,611 INFO U.R.SSHManager [main] Going to executing command: hostname
+2021-02-01 11:48:10,644 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 11:48:10,645 INFO U.R.SSHManager [main] Going to executing command: Cluster
+2021-02-01 11:48:10,664 WARN U.R.SSHManager [main] Error response: 
+'Cluster' is not recognized as an internal or external command,
+operable program or batch file.
+2021-02-01 11:48:14,169 INFO A.SimulatedAgentActions [main] SimulatedAgentActions, DS URL: https://endpoint-protection-services.qa.tw-test.net:443/
+2021-02-01 11:48:14,185 INFO T.E.InitAndCleanupPortal [main] Going to send delete action to Centcom for agent on hostanem NTY-EN-8D25HC2
+2021-02-01 11:48:14,186 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before switch application type: Chrome
+2021-02-01 11:48:14,186 DEBUG A.SeleniumBrowser [main] Setting Chrome driver location: C:/home/NepManagerDownloads/utils/chromedriver.exe
+2021-02-01 11:48:14,187 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new hashMap
+2021-02-01 11:48:14,187 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After reading MasterDownloadFolder property: C:\home\NepManagerDownloads
+2021-02-01 11:48:14,188 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After put to hash
+2021-02-01 11:48:14,191 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After new chrome options
+2021-02-01 11:48:14,194 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After chrome setExperimentalOption
+2021-02-01 11:48:14,194 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before setting several chrome options
+2021-02-01 11:48:14,200 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before creating new chrome driver
+2021-02-01 11:48:18,211 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new chrome driver
+2021-02-01 11:48:18,217 DEBUG A.SeleniumBrowser [main] After Setting implicit timeout
+2021-02-01 11:48:20,232 DEBUG A.SeleniumBrowser [main] After maximizing window 
+2021-02-01 11:48:20,232 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2021-02-01 11:48:20,233 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2021-02-01 11:48:20,233 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net
+2021-02-01 11:48:29,870 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net
+2021-02-01 11:48:31,344 DEBUG A.BrowserActions [main] Waiting for login button to be clickable...
+2021-02-01 11:48:31,492 DEBUG A.BrowserActions [main] Login button clicked successfully...
+2021-02-01 11:48:37,298 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2021-02-01 11:48:37,299 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2021-02-01 11:48:37,300 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2021-02-01 11:48:37,794 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2021-02-01 11:49:03,269 ERROR A.BrowserActions [main] Could not select the specific cluster  at CentCom search page. cluster: jhhhhgffccc
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="td _ngcontent-rkk-119" column="Alias Name">...</div> is not clickable at point (567, 852). Other element would receive the click: <div pane-id="default-53" class="pane modal visible" style="inset: 0px; transform: translateX(0px) translateY(0px);">...</div>
+  (Session info: chrome=88.0.4324.104)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NTY-EN-8D25HC2', ip: '10.243.68.245', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\MOSHE~1.AVI\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:49689}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 142c87bc8b7018f59da383e167298dee
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84) ~[selenium-remote-driver-3.141.59.jar:?]
+	at Actions.BrowserActions.CreateNewCluster(BrowserActions.java:702) ~[classes/:?]
+	at Tests.Environments.InitAndCleanupPortal.CreateNewClusterActions(InitAndCleanupPortal.java:127) ~[classes/:?]
+	at Tests.Environments.InitAndCleanupPortal.cleanupAgents(InitAndCleanupPortal.java:67) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.1.0.jar:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1540) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:766) [testng-7.1.0.jar:?]
+	at org.testng.TestRunner.run(TestRunner.java:587) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96) [testng-7.1.0.jar:?]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187) [testng-7.1.0.jar:?]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109) [testng-7.1.0.jar:?]
+	at org.testng.TestNG.runSuites(TestNG.java:1039) [testng-7.1.0.jar:?]
+	at org.testng.TestNG.run(TestNG.java:1007) [testng-7.1.0.jar:?]
+	at Utils.Main.RunTest.main(RunTest.java:116) [classes/:?]
+2021-02-01 11:49:04,377 ERROR A.BrowserActions [main] Could not select the specific cluster  at CentCom search page. cluster: 
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="ellipse _ngcontent-rkk-109" tooltiponlyifoverflow="" aria-owns="638635b0-efdc-482a-81a9-4e1af9fd07cc--1506" aria-haspopup="true">...</div> is not clickable at point (576, 166). Other element would receive the click: <div pane-id="default-53" class="pane modal visible" style="inset: 0px; transform: translateX(0px) translateY(0px);">...</div>
+  (Session info: chrome=88.0.4324.104)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NTY-EN-8D25HC2', ip: '10.243.68.245', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\MOSHE~1.AVI\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:49689}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 142c87bc8b7018f59da383e167298dee
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84) ~[selenium-remote-driver-3.141.59.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51) ~[selenium-support-3.141.59.jar:?]
+	at com.sun.proxy.$Proxy30.click(Unknown Source) ~[?:?]
+	at Actions.BrowserActions.CreateNewCluster(BrowserActions.java:679) ~[classes/:?]
+	at Tests.Environments.InitAndCleanupPortal.CreateNewClusterActions(InitAndCleanupPortal.java:129) ~[classes/:?]
+	at Tests.Environments.InitAndCleanupPortal.cleanupAgents(InitAndCleanupPortal.java:67) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.1.0.jar:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1540) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:766) [testng-7.1.0.jar:?]
+	at org.testng.TestRunner.run(TestRunner.java:587) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96) [testng-7.1.0.jar:?]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187) [testng-7.1.0.jar:?]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109) [testng-7.1.0.jar:?]
+	at org.testng.TestNG.runSuites(TestNG.java:1039) [testng-7.1.0.jar:?]
+	at org.testng.TestNG.run(TestNG.java:1007) [testng-7.1.0.jar:?]
+	at Utils.Main.RunTest.main(RunTest.java:116) [classes/:?]
+2021-02-01 11:49:04,379 INFO T.E.InitAndCleanupPortal [main] Agent was found and delete action was done in Centcom, going to wait until service is uninstalled from agent
+2021-02-01 11:49:09,380 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 11:49:09,420 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 11:50:00,584 DEBUG T.RecordedTest [main] screenshot file: C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation/test-output/capture/InitAndCleanupPortal-01-02-2021-11.50.00.png
+2021-02-01 11:50:00,591 INFO T.E.InitAndCleanupPortal [main] Starting Cleanup agents
+2021-02-01 11:50:05,898 INFO U.R.SSHManager [main] Connected Successfully to host 10.243.68.245
+2021-02-01 11:50:05,900 INFO U.R.SSHManager [main] Going to executing command: hostname
+2021-02-01 11:50:05,924 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 11:50:05,925 INFO U.R.SSHManager [main] Going to executing command: Cluster
+2021-02-01 11:50:05,945 WARN U.R.SSHManager [main] Error response: 
+'Cluster' is not recognized as an internal or external command,
+operable program or batch file.
+2021-02-01 11:50:09,659 INFO A.SimulatedAgentActions [main] SimulatedAgentActions, DS URL: https://endpoint-protection-services.qa.tw-test.net:443/
+2021-02-01 11:50:09,677 INFO T.E.InitAndCleanupPortal [main] Going to send delete action to Centcom for agent on hostanem NTY-EN-8D25HC2
+2021-02-01 11:50:09,678 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before switch application type: Chrome
+2021-02-01 11:50:09,678 DEBUG A.SeleniumBrowser [main] Setting Chrome driver location: C:/home/NepManagerDownloads/utils/chromedriver.exe
+2021-02-01 11:50:09,679 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new hashMap
+2021-02-01 11:50:09,679 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After reading MasterDownloadFolder property: C:\home\NepManagerDownloads
+2021-02-01 11:50:09,679 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After put to hash
+2021-02-01 11:50:09,684 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After new chrome options
+2021-02-01 11:50:09,686 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After chrome setExperimentalOption
+2021-02-01 11:50:09,686 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before setting several chrome options
+2021-02-01 11:50:09,691 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before creating new chrome driver
+2021-02-01 11:50:13,715 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new chrome driver
+2021-02-01 11:50:13,722 DEBUG A.SeleniumBrowser [main] After Setting implicit timeout
+2021-02-01 11:50:15,764 DEBUG A.SeleniumBrowser [main] After maximizing window 
+2021-02-01 11:50:15,765 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2021-02-01 11:50:15,765 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2021-02-01 11:50:15,765 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net
+2021-02-01 11:50:21,307 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net
+2021-02-01 11:50:22,961 DEBUG A.BrowserActions [main] Waiting for login button to be clickable...
+2021-02-01 11:50:23,133 DEBUG A.BrowserActions [main] Login button clicked successfully...
+2021-02-01 11:50:24,845 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2021-02-01 11:50:24,846 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2021-02-01 11:50:24,846 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2021-02-01 11:50:25,022 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2021-02-01 11:54:45,183 DEBUG T.RecordedTest [main] screenshot file: C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation/test-output/capture/InitAndCleanupPortal-01-02-2021-11.54.45.png
+2021-02-01 11:54:45,189 INFO T.E.InitAndCleanupPortal [main] Starting Cleanup agents
+2021-02-01 11:54:50,899 INFO U.R.SSHManager [main] Connected Successfully to host 10.243.68.245
+2021-02-01 11:54:50,901 INFO U.R.SSHManager [main] Going to executing command: hostname
+2021-02-01 11:54:50,926 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 11:54:50,926 INFO U.R.SSHManager [main] Going to executing command: Cluster
+2021-02-01 11:54:50,938 WARN U.R.SSHManager [main] Error response: 
+'Cluster' is not recognized as an internal or external command,
+operable program or batch file.
+2021-02-01 11:54:54,444 INFO A.SimulatedAgentActions [main] SimulatedAgentActions, DS URL: https://endpoint-protection-services.qa.tw-test.net:443/
+2021-02-01 11:54:54,463 INFO T.E.InitAndCleanupPortal [main] Going to send delete action to Centcom for agent on hostanem NTY-EN-8D25HC2
+2021-02-01 11:54:54,464 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before switch application type: Chrome
+2021-02-01 11:54:54,464 DEBUG A.SeleniumBrowser [main] Setting Chrome driver location: C:/home/NepManagerDownloads/utils/chromedriver.exe
+2021-02-01 11:54:54,465 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new hashMap
+2021-02-01 11:54:54,465 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After reading MasterDownloadFolder property: C:\home\NepManagerDownloads
+2021-02-01 11:54:54,465 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After put to hash
+2021-02-01 11:54:54,469 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After new chrome options
+2021-02-01 11:54:54,472 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After chrome setExperimentalOption
+2021-02-01 11:54:54,472 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before setting several chrome options
+2021-02-01 11:54:54,478 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before creating new chrome driver
+2021-02-01 11:54:58,511 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new chrome driver
+2021-02-01 11:54:58,519 DEBUG A.SeleniumBrowser [main] After Setting implicit timeout
+2021-02-01 11:55:00,536 DEBUG A.SeleniumBrowser [main] After maximizing window 
+2021-02-01 11:55:00,536 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2021-02-01 11:55:00,536 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2021-02-01 11:55:00,537 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net
+2021-02-01 11:55:05,602 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net
+2021-02-01 11:55:07,391 DEBUG A.BrowserActions [main] Waiting for login button to be clickable...
+2021-02-01 11:55:07,545 DEBUG A.BrowserActions [main] Login button clicked successfully...
+2021-02-01 11:55:09,666 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2021-02-01 11:55:09,667 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2021-02-01 11:55:09,667 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2021-02-01 11:55:10,036 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2021-02-01 11:55:34,433 ERROR A.BrowserActions [main] Cluster is already exists
+2021-02-01 11:56:45,934 DEBUG T.RecordedTest [main] screenshot file: C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation/test-output/capture/InitAndCleanupPortal-01-02-2021-11.56.45.png
+2021-02-01 11:56:45,941 INFO T.E.InitAndCleanupPortal [main] Starting Cleanup agents
+2021-02-01 11:56:51,496 INFO U.R.SSHManager [main] Connected Successfully to host 10.243.68.245
+2021-02-01 11:56:51,498 INFO U.R.SSHManager [main] Going to executing command: hostname
+2021-02-01 11:56:51,523 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 11:56:51,523 INFO U.R.SSHManager [main] Going to executing command: Cluster
+2021-02-01 11:56:51,539 WARN U.R.SSHManager [main] Error response: 
+'Cluster' is not recognized as an internal or external command,
+operable program or batch file.
+2021-02-01 11:56:55,274 INFO A.SimulatedAgentActions [main] SimulatedAgentActions, DS URL: https://endpoint-protection-services.qa.tw-test.net:443/
+2021-02-01 11:56:55,300 INFO T.E.InitAndCleanupPortal [main] Going to send delete action to Centcom for agent on hostanem NTY-EN-8D25HC2
+2021-02-01 11:56:55,300 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before switch application type: Chrome
+2021-02-01 11:56:55,301 DEBUG A.SeleniumBrowser [main] Setting Chrome driver location: C:/home/NepManagerDownloads/utils/chromedriver.exe
+2021-02-01 11:56:55,301 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new hashMap
+2021-02-01 11:56:55,302 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After reading MasterDownloadFolder property: C:\home\NepManagerDownloads
+2021-02-01 11:56:55,302 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After put to hash
+2021-02-01 11:56:55,307 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After new chrome options
+2021-02-01 11:56:55,309 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After chrome setExperimentalOption
+2021-02-01 11:56:55,310 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before setting several chrome options
+2021-02-01 11:56:55,316 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before creating new chrome driver
+2021-02-01 11:56:59,478 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new chrome driver
+2021-02-01 11:56:59,494 DEBUG A.SeleniumBrowser [main] After Setting implicit timeout
+2021-02-01 11:57:01,516 DEBUG A.SeleniumBrowser [main] After maximizing window 
+2021-02-01 11:57:01,516 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2021-02-01 11:57:01,517 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2021-02-01 11:57:01,518 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net
+2021-02-01 11:57:07,495 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net
+2021-02-01 11:57:08,947 DEBUG A.BrowserActions [main] Waiting for login button to be clickable...
+2021-02-01 11:57:09,114 DEBUG A.BrowserActions [main] Login button clicked successfully...
+2021-02-01 11:57:12,391 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2021-02-01 11:57:12,391 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2021-02-01 11:57:12,391 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2021-02-01 11:57:12,768 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2021-02-01 11:57:41,163 ERROR A.BrowserActions [main] Cluster is already exists
+2021-02-01 11:57:58,722 ERROR A.BrowserActions [main] Cluster is already exists
+2021-02-01 11:57:58,722 INFO T.E.InitAndCleanupPortal [main] Agent was found and delete action was done in Centcom, going to wait until service is uninstalled from agent
+2021-02-01 11:58:03,723 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 11:58:03,767 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 11:58:08,768 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 11:58:08,833 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 11:58:13,834 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 11:58:13,868 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 11:58:18,868 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 11:58:18,921 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 11:58:23,922 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 11:58:23,961 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 11:58:28,962 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 11:58:29,001 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 11:58:34,003 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 11:58:34,040 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 11:58:39,040 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 11:58:39,077 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 11:58:44,078 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 11:58:44,112 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 11:58:49,112 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 11:58:49,149 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 11:58:54,150 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 11:58:54,188 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 11:58:59,189 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 11:58:59,225 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 11:59:04,226 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 11:59:04,272 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 11:59:17,683 DEBUG T.RecordedTest [main] screenshot file: C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation/test-output/capture/InitAndCleanupPortal-01-02-2021-11.59.17.png
+2021-02-01 11:59:17,690 INFO T.E.InitAndCleanupPortal [main] Starting Cleanup agents
+2021-02-01 11:59:23,419 INFO U.R.SSHManager [main] Connected Successfully to host 10.243.68.245
+2021-02-01 11:59:23,421 INFO U.R.SSHManager [main] Going to executing command: hostname
+2021-02-01 11:59:23,448 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 11:59:23,448 INFO U.R.SSHManager [main] Going to executing command: Cluster
+2021-02-01 11:59:23,462 WARN U.R.SSHManager [main] Error response: 
+'Cluster' is not recognized as an internal or external command,
+operable program or batch file.
+2021-02-01 11:59:26,979 INFO A.SimulatedAgentActions [main] SimulatedAgentActions, DS URL: https://endpoint-protection-services.qa.tw-test.net:443/
+2021-02-01 11:59:27,011 INFO T.E.InitAndCleanupPortal [main] Going to send delete action to Centcom for agent on hostanem NTY-EN-8D25HC2
+2021-02-01 11:59:27,013 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before switch application type: Chrome
+2021-02-01 11:59:27,013 DEBUG A.SeleniumBrowser [main] Setting Chrome driver location: C:/home/NepManagerDownloads/utils/chromedriver.exe
+2021-02-01 11:59:27,014 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new hashMap
+2021-02-01 11:59:27,015 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After reading MasterDownloadFolder property: C:\home\NepManagerDownloads
+2021-02-01 11:59:27,016 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After put to hash
+2021-02-01 11:59:27,024 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After new chrome options
+2021-02-01 11:59:27,027 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After chrome setExperimentalOption
+2021-02-01 11:59:27,027 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before setting several chrome options
+2021-02-01 11:59:27,034 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before creating new chrome driver
+2021-02-01 11:59:31,254 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new chrome driver
+2021-02-01 11:59:31,262 DEBUG A.SeleniumBrowser [main] After Setting implicit timeout
+2021-02-01 11:59:33,279 DEBUG A.SeleniumBrowser [main] After maximizing window 
+2021-02-01 11:59:33,280 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2021-02-01 11:59:33,280 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2021-02-01 11:59:33,281 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net
+2021-02-01 11:59:38,226 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net
+2021-02-01 11:59:39,838 DEBUG A.BrowserActions [main] Waiting for login button to be clickable...
+2021-02-01 11:59:40,044 DEBUG A.BrowserActions [main] Login button clicked successfully...
+2021-02-01 11:59:43,316 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2021-02-01 11:59:43,316 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2021-02-01 11:59:43,317 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2021-02-01 11:59:43,648 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2021-02-01 12:00:41,151 ERROR A.BrowserActions [main] Could not select the specific cluster  at CentCom search page. cluster: jhhhhgffccc
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="label _ngcontent-gqy-54">...</span> is not clickable at point (1134, 311). Other element would receive the click: <twa-menu-item icon="tw-network" iconclass="redTxt" label="Remove from Cluster" class="_ngcontent-gqy-113 _nghost-gqy-53">...</twa-menu-item>
+  (Session info: chrome=88.0.4324.104)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NTY-EN-8D25HC2', ip: '10.243.68.245', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\MOSHE~1.AVI\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:50822}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 0d0a61a2622caefab4d2e8a12b58e163
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84) ~[selenium-remote-driver-3.141.59.jar:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51) ~[selenium-support-3.141.59.jar:?]
+	at com.sun.proxy.$Proxy30.click(Unknown Source) ~[?:?]
+	at Actions.BrowserActions.CreateNewCluster(BrowserActions.java:870) ~[classes/:?]
+	at Tests.Environments.InitAndCleanupPortal.CreateNewClusterActions(InitAndCleanupPortal.java:127) ~[classes/:?]
+	at Tests.Environments.InitAndCleanupPortal.cleanupAgents(InitAndCleanupPortal.java:67) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.1.0.jar:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1540) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:766) [testng-7.1.0.jar:?]
+	at org.testng.TestRunner.run(TestRunner.java:587) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96) [testng-7.1.0.jar:?]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187) [testng-7.1.0.jar:?]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109) [testng-7.1.0.jar:?]
+	at org.testng.TestNG.runSuites(TestNG.java:1039) [testng-7.1.0.jar:?]
+	at org.testng.TestNG.run(TestNG.java:1007) [testng-7.1.0.jar:?]
+	at Utils.Main.RunTest.main(RunTest.java:116) [classes/:?]
+2021-02-01 12:00:58,883 ERROR A.BrowserActions [main] Cluster is already exists
+2021-02-01 12:00:58,883 INFO T.E.InitAndCleanupPortal [main] Agent was found and delete action was done in Centcom, going to wait until service is uninstalled from agent
+2021-02-01 12:01:03,883 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 12:01:03,944 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 12:01:08,945 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 12:01:08,999 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 12:02:37,588 DEBUG T.RecordedTest [main] screenshot file: C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation/test-output/capture/InitAndCleanupPortal-01-02-2021-12.02.37.png
+2021-02-01 12:02:37,595 INFO T.E.InitAndCleanupPortal [main] Starting Cleanup agents
+2021-02-01 12:02:43,830 INFO U.R.SSHManager [main] Connected Successfully to host 10.243.68.245
+2021-02-01 12:02:43,832 INFO U.R.SSHManager [main] Going to executing command: hostname
+2021-02-01 12:02:43,861 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 12:02:43,861 INFO U.R.SSHManager [main] Going to executing command: Cluster
+2021-02-01 12:02:43,875 WARN U.R.SSHManager [main] Error response: 
+'Cluster' is not recognized as an internal or external command,
+operable program or batch file.
+2021-02-01 12:02:47,630 INFO A.SimulatedAgentActions [main] SimulatedAgentActions, DS URL: https://endpoint-protection-services.qa.tw-test.net:443/
+2021-02-01 12:02:47,646 INFO T.E.InitAndCleanupPortal [main] Going to send delete action to Centcom for agent on hostanem NTY-EN-8D25HC2
+2021-02-01 12:02:47,646 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before switch application type: Chrome
+2021-02-01 12:02:47,647 DEBUG A.SeleniumBrowser [main] Setting Chrome driver location: C:/home/NepManagerDownloads/utils/chromedriver.exe
+2021-02-01 12:02:47,647 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new hashMap
+2021-02-01 12:02:47,648 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After reading MasterDownloadFolder property: C:\home\NepManagerDownloads
+2021-02-01 12:02:47,648 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After put to hash
+2021-02-01 12:02:47,653 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After new chrome options
+2021-02-01 12:02:47,655 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After chrome setExperimentalOption
+2021-02-01 12:02:47,655 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before setting several chrome options
+2021-02-01 12:02:47,661 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before creating new chrome driver
+2021-02-01 12:02:52,146 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new chrome driver
+2021-02-01 12:02:52,154 DEBUG A.SeleniumBrowser [main] After Setting implicit timeout
+2021-02-01 12:02:54,169 DEBUG A.SeleniumBrowser [main] After maximizing window 
+2021-02-01 12:02:54,169 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2021-02-01 12:02:54,170 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2021-02-01 12:02:54,170 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net
+2021-02-01 12:03:03,716 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net
+2021-02-01 12:03:05,350 DEBUG A.BrowserActions [main] Waiting for login button to be clickable...
+2021-02-01 12:03:05,560 DEBUG A.BrowserActions [main] Login button clicked successfully...
+2021-02-01 12:03:08,356 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2021-02-01 12:03:08,356 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2021-02-01 12:03:08,357 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2021-02-01 12:03:08,578 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2021-02-01 12:05:10,335 INFO T.E.InitAndCleanupPortal [main] Agent was found and delete action was done in Centcom, going to wait until service is uninstalled from agent
+2021-02-01 12:05:15,336 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 12:05:15,386 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 12:05:20,388 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 12:05:20,441 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 12:35:36,557 DEBUG T.RecordedTest [main] screenshot file: C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation/test-output/capture/InitAndCleanupPortal-01-02-2021-12.35.36.png
+2021-02-01 12:35:36,567 INFO T.E.InitAndCleanupPortal [main] Starting Cleanup agents
+2021-02-01 12:35:42,922 INFO U.R.SSHManager [main] Connected Successfully to host 10.243.68.245
+2021-02-01 12:35:42,924 INFO U.R.SSHManager [main] Going to executing command: hostname
+2021-02-01 12:35:42,954 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 12:35:42,955 INFO U.R.SSHManager [main] Going to executing command: Cluster
+2021-02-01 12:35:42,966 WARN U.R.SSHManager [main] Error response: 
+'Cluster' is not recognized as an internal or external command,
+operable program or batch file.
+2021-02-01 12:35:47,072 INFO A.SimulatedAgentActions [main] SimulatedAgentActions, DS URL: https://endpoint-protection-services.qa.tw-test.net:443/
+2021-02-01 12:35:47,103 INFO T.E.InitAndCleanupPortal [main] Going to send delete action to Centcom for agent on hostanem NTY-EN-8D25HC2
+2021-02-01 12:35:47,103 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before switch application type: Chrome
+2021-02-01 12:35:47,103 DEBUG A.SeleniumBrowser [main] Setting Chrome driver location: C:/home/NepManagerDownloads/utils/chromedriver.exe
+2021-02-01 12:35:47,104 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new hashMap
+2021-02-01 12:35:47,104 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After reading MasterDownloadFolder property: C:\home\NepManagerDownloads
+2021-02-01 12:35:47,105 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After put to hash
+2021-02-01 12:35:47,110 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After new chrome options
+2021-02-01 12:35:47,113 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After chrome setExperimentalOption
+2021-02-01 12:35:47,113 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before setting several chrome options
+2021-02-01 12:35:47,119 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before creating new chrome driver
+2021-02-01 12:35:51,663 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new chrome driver
+2021-02-01 12:35:51,671 DEBUG A.SeleniumBrowser [main] After Setting implicit timeout
+2021-02-01 12:35:53,686 DEBUG A.SeleniumBrowser [main] After maximizing window 
+2021-02-01 12:35:53,687 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2021-02-01 12:35:53,687 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2021-02-01 12:35:53,687 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net
+2021-02-01 12:36:03,009 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net
+2021-02-01 12:36:04,534 DEBUG A.BrowserActions [main] Waiting for login button to be clickable...
+2021-02-01 12:36:04,692 DEBUG A.BrowserActions [main] Login button clicked successfully...
+2021-02-01 12:36:10,497 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2021-02-01 12:36:10,497 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2021-02-01 12:36:10,498 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2021-02-01 12:36:10,839 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2021-02-01 12:38:05,767 INFO T.E.InitAndCleanupPortal [main] Agent was found and delete action was done in Centcom, going to wait until service is uninstalled from agent
+2021-02-01 12:38:10,769 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 12:38:10,837 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 12:38:15,837 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 12:38:15,884 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 12:38:20,885 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 12:38:20,916 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 12:38:25,916 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 12:38:25,964 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 12:38:30,965 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 12:38:31,003 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 12:38:36,003 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 12:38:36,049 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 12:38:41,049 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 12:38:41,084 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 12:38:46,085 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 12:38:46,131 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 12:38:51,131 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 12:38:51,169 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 12:38:56,169 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 12:38:56,220 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:45:00,102 DEBUG T.RecordedTest [main] screenshot file: C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation/test-output/capture/InitAndCleanupPortal-01-02-2021-14.45.00.png
+2021-02-01 14:45:00,111 INFO T.E.InitAndCleanupPortal [main] Starting Cleanup agents
+2021-02-01 14:45:06,950 INFO U.R.SSHManager [main] Connected Successfully to host 10.243.68.245
+2021-02-01 14:45:06,952 INFO U.R.SSHManager [main] Going to executing command: hostname
+2021-02-01 14:45:06,979 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:45:06,980 INFO U.R.SSHManager [main] Going to executing command: Cluster
+2021-02-01 14:45:06,993 WARN U.R.SSHManager [main] Error response: 
+'Cluster' is not recognized as an internal or external command,
+operable program or batch file.
+2021-02-01 14:45:10,944 INFO A.SimulatedAgentActions [main] SimulatedAgentActions, DS URL: https://endpoint-protection-services.qa.tw-test.net:443/
+2021-02-01 14:45:10,961 INFO T.E.InitAndCleanupPortal [main] Going to send delete action to Centcom for agent on hostanem NTY-EN-8D25HC2
+2021-02-01 14:45:10,962 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before switch application type: Chrome
+2021-02-01 14:45:10,962 DEBUG A.SeleniumBrowser [main] Setting Chrome driver location: C:/home/NepManagerDownloads/utils/chromedriver.exe
+2021-02-01 14:45:10,963 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new hashMap
+2021-02-01 14:45:10,963 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After reading MasterDownloadFolder property: C:\home\NepManagerDownloads
+2021-02-01 14:45:10,964 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After put to hash
+2021-02-01 14:45:10,968 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After new chrome options
+2021-02-01 14:45:10,971 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After chrome setExperimentalOption
+2021-02-01 14:45:10,971 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before setting several chrome options
+2021-02-01 14:45:10,977 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before creating new chrome driver
+2021-02-01 14:45:15,355 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new chrome driver
+2021-02-01 14:45:15,362 DEBUG A.SeleniumBrowser [main] After Setting implicit timeout
+2021-02-01 14:45:17,380 DEBUG A.SeleniumBrowser [main] After maximizing window 
+2021-02-01 14:45:17,381 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2021-02-01 14:45:17,381 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2021-02-01 14:45:17,382 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net
+2021-02-01 14:45:23,358 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net
+2021-02-01 14:45:24,856 DEBUG A.BrowserActions [main] Waiting for login button to be clickable...
+2021-02-01 14:45:25,045 DEBUG A.BrowserActions [main] Login button clicked successfully...
+2021-02-01 14:45:27,312 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2021-02-01 14:45:27,313 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2021-02-01 14:45:27,313 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2021-02-01 14:45:27,676 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2021-02-01 14:47:26,714 ERROR A.BrowserActions [main] Could not select the specific cluster  at CentCom search page. cluster: 
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="label _ngcontent-ucb-54">...</span> is not clickable at point (1134, 311). Other element would receive the click: <twa-menu-item icon="tw-network" iconclass="redTxt" label="Remove from Cluster" class="_ngcontent-ucb-113 _nghost-ucb-53">...</twa-menu-item>
+  (Session info: chrome=88.0.4324.104)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NTY-EN-8D25HC2', ip: '10.243.68.245', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\MOSHE~1.AVI\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:56229}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 4a00f1566fbe713aaf616e830534d3a0
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84) ~[selenium-remote-driver-3.141.59.jar:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51) ~[selenium-support-3.141.59.jar:?]
+	at com.sun.proxy.$Proxy30.click(Unknown Source) ~[?:?]
+	at Actions.BrowserActions.CreateNewCluster(BrowserActions.java:868) ~[classes/:?]
+	at Tests.Environments.InitAndCleanupPortal.CreateNewClusterActions(InitAndCleanupPortal.java:129) ~[classes/:?]
+	at Tests.Environments.InitAndCleanupPortal.cleanupAgents(InitAndCleanupPortal.java:67) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.1.0.jar:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1540) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:766) [testng-7.1.0.jar:?]
+	at org.testng.TestRunner.run(TestRunner.java:587) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96) [testng-7.1.0.jar:?]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187) [testng-7.1.0.jar:?]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109) [testng-7.1.0.jar:?]
+	at org.testng.TestNG.runSuites(TestNG.java:1039) [testng-7.1.0.jar:?]
+	at org.testng.TestNG.run(TestNG.java:1007) [testng-7.1.0.jar:?]
+	at Utils.Main.RunTest.main(RunTest.java:116) [classes/:?]
+2021-02-01 14:47:26,719 INFO T.E.InitAndCleanupPortal [main] Agent was found and delete action was done in Centcom, going to wait until service is uninstalled from agent
+2021-02-01 14:47:31,720 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:47:31,774 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:47:36,776 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:47:36,820 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:47:41,821 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:47:41,856 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:49:04,551 DEBUG T.RecordedTest [main] screenshot file: C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation/test-output/capture/InitAndCleanupPortal-01-02-2021-14.49.04.png
+2021-02-01 14:49:04,559 INFO T.E.InitAndCleanupPortal [main] Starting Cleanup agents
+2021-02-01 14:49:10,212 INFO U.R.SSHManager [main] Connected Successfully to host 10.243.68.245
+2021-02-01 14:49:10,215 INFO U.R.SSHManager [main] Going to executing command: hostname
+2021-02-01 14:49:10,240 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:49:10,241 INFO U.R.SSHManager [main] Going to executing command: Cluster
+2021-02-01 14:49:10,252 WARN U.R.SSHManager [main] Error response: 
+'Cluster' is not recognized as an internal or external command,
+operable program or batch file.
+2021-02-01 14:49:14,016 INFO A.SimulatedAgentActions [main] SimulatedAgentActions, DS URL: https://endpoint-protection-services.qa.tw-test.net:443/
+2021-02-01 14:49:14,032 INFO T.E.InitAndCleanupPortal [main] Going to send delete action to Centcom for agent on hostanem NTY-EN-8D25HC2
+2021-02-01 14:49:14,033 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before switch application type: Chrome
+2021-02-01 14:49:14,033 DEBUG A.SeleniumBrowser [main] Setting Chrome driver location: C:/home/NepManagerDownloads/utils/chromedriver.exe
+2021-02-01 14:49:14,034 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new hashMap
+2021-02-01 14:49:14,034 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After reading MasterDownloadFolder property: C:\home\NepManagerDownloads
+2021-02-01 14:49:14,034 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After put to hash
+2021-02-01 14:49:14,039 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After new chrome options
+2021-02-01 14:49:14,041 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After chrome setExperimentalOption
+2021-02-01 14:49:14,042 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before setting several chrome options
+2021-02-01 14:49:14,046 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before creating new chrome driver
+2021-02-01 14:49:18,136 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new chrome driver
+2021-02-01 14:49:18,143 DEBUG A.SeleniumBrowser [main] After Setting implicit timeout
+2021-02-01 14:49:20,159 DEBUG A.SeleniumBrowser [main] After maximizing window 
+2021-02-01 14:49:20,160 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2021-02-01 14:49:20,160 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2021-02-01 14:49:20,160 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net
+2021-02-01 14:49:25,443 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net
+2021-02-01 14:49:27,134 DEBUG A.BrowserActions [main] Waiting for login button to be clickable...
+2021-02-01 14:49:27,315 DEBUG A.BrowserActions [main] Login button clicked successfully...
+2021-02-01 14:49:29,410 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2021-02-01 14:49:29,411 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2021-02-01 14:49:29,411 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2021-02-01 14:49:29,792 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2021-02-01 14:50:22,965 ERROR A.BrowserActions [main] Could not select the specific cluster  at CentCom search page. cluster: jhhhhgffccc
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="label _ngcontent-bfk-54">...</span> is not clickable at point (1134, 311). Other element would receive the click: <twa-menu-item icon="tw-network" iconclass="redTxt" label="Remove from Cluster" class="_ngcontent-bfk-113 _nghost-bfk-53">...</twa-menu-item>
+  (Session info: chrome=88.0.4324.104)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NTY-EN-8D25HC2', ip: '10.243.68.245', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\MOSHE~1.AVI\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:56299}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 79d7cf0396c8186cd497ac7b6b32c629
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84) ~[selenium-remote-driver-3.141.59.jar:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51) ~[selenium-support-3.141.59.jar:?]
+	at com.sun.proxy.$Proxy30.click(Unknown Source) ~[?:?]
+	at Actions.BrowserActions.CreateNewCluster(BrowserActions.java:869) ~[classes/:?]
+	at Tests.Environments.InitAndCleanupPortal.CreateNewClusterActions(InitAndCleanupPortal.java:127) ~[classes/:?]
+	at Tests.Environments.InitAndCleanupPortal.cleanupAgents(InitAndCleanupPortal.java:67) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.1.0.jar:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1540) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:766) [testng-7.1.0.jar:?]
+	at org.testng.TestRunner.run(TestRunner.java:587) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96) [testng-7.1.0.jar:?]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187) [testng-7.1.0.jar:?]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109) [testng-7.1.0.jar:?]
+	at org.testng.TestNG.runSuites(TestNG.java:1039) [testng-7.1.0.jar:?]
+	at org.testng.TestNG.run(TestNG.java:1007) [testng-7.1.0.jar:?]
+	at Utils.Main.RunTest.main(RunTest.java:116) [classes/:?]
+2021-02-01 14:50:29,495 ERROR A.BrowserActions [main] Could not select the specific cluster  at CentCom search page. cluster: 
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="td _ngcontent-bfk-119" column="">...</div> is not clickable at point (323, 268). Other element would receive the click: <div pane-id="default-65" class="pane modal visible" style="inset: 0px; transform: translateX(0px) translateY(0px);">...</div>
+  (Session info: chrome=88.0.4324.104)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NTY-EN-8D25HC2', ip: '10.243.68.245', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\MOSHE~1.AVI\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:56299}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 79d7cf0396c8186cd497ac7b6b32c629
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84) ~[selenium-remote-driver-3.141.59.jar:?]
+	at Actions.BrowserActions.CreateNewCluster(BrowserActions.java:702) ~[classes/:?]
+	at Tests.Environments.InitAndCleanupPortal.CreateNewClusterActions(InitAndCleanupPortal.java:129) ~[classes/:?]
+	at Tests.Environments.InitAndCleanupPortal.cleanupAgents(InitAndCleanupPortal.java:67) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.1.0.jar:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1540) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:766) [testng-7.1.0.jar:?]
+	at org.testng.TestRunner.run(TestRunner.java:587) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96) [testng-7.1.0.jar:?]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187) [testng-7.1.0.jar:?]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109) [testng-7.1.0.jar:?]
+	at org.testng.TestNG.runSuites(TestNG.java:1039) [testng-7.1.0.jar:?]
+	at org.testng.TestNG.run(TestNG.java:1007) [testng-7.1.0.jar:?]
+	at Utils.Main.RunTest.main(RunTest.java:116) [classes/:?]
+2021-02-01 14:50:29,496 INFO T.E.InitAndCleanupPortal [main] Agent was found and delete action was done in Centcom, going to wait until service is uninstalled from agent
+2021-02-01 14:50:34,497 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:50:34,541 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:50:39,542 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:50:39,576 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:50:44,578 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:50:44,613 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:50:49,614 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:50:49,685 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:50:54,686 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:50:54,733 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:50:59,735 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:50:59,769 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:51:04,770 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:51:04,820 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:51:09,821 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:51:09,854 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:51:14,854 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:51:14,887 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:51:19,888 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:51:19,924 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:51:24,924 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:51:24,957 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:51:29,957 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:51:30,007 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:51:35,008 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:51:35,061 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:51:40,061 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:51:40,096 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:51:45,096 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:51:45,132 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:51:50,133 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:51:50,167 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:51:55,167 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:51:55,203 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:52:00,203 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:52:00,243 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:52:05,244 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:52:05,279 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:52:10,279 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:52:10,313 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:52:15,314 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:52:15,347 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:52:20,347 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:52:20,389 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:52:25,391 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:52:25,423 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:53:20,525 DEBUG T.RecordedTest [main] screenshot file: C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation/test-output/capture/InitAndCleanupPortal-01-02-2021-14.53.20.png
+2021-02-01 14:53:20,532 INFO T.E.InitAndCleanupPortal [main] Starting Cleanup agents
+2021-02-01 14:53:26,651 INFO U.R.SSHManager [main] Connected Successfully to host 10.243.68.245
+2021-02-01 14:53:26,653 INFO U.R.SSHManager [main] Going to executing command: hostname
+2021-02-01 14:53:26,683 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:53:26,683 INFO U.R.SSHManager [main] Going to executing command: Cluster
+2021-02-01 14:53:26,696 WARN U.R.SSHManager [main] Error response: 
+'Cluster' is not recognized as an internal or external command,
+operable program or batch file.
+2021-02-01 14:53:30,619 INFO A.SimulatedAgentActions [main] SimulatedAgentActions, DS URL: https://endpoint-protection-services.qa.tw-test.net:443/
+2021-02-01 14:53:30,636 INFO T.E.InitAndCleanupPortal [main] Going to send delete action to Centcom for agent on hostanem NTY-EN-8D25HC2
+2021-02-01 14:53:30,636 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before switch application type: Chrome
+2021-02-01 14:53:30,637 DEBUG A.SeleniumBrowser [main] Setting Chrome driver location: C:/home/NepManagerDownloads/utils/chromedriver.exe
+2021-02-01 14:53:30,637 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new hashMap
+2021-02-01 14:53:30,637 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After reading MasterDownloadFolder property: C:\home\NepManagerDownloads
+2021-02-01 14:53:30,638 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After put to hash
+2021-02-01 14:53:30,642 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After new chrome options
+2021-02-01 14:53:30,644 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After chrome setExperimentalOption
+2021-02-01 14:53:30,645 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before setting several chrome options
+2021-02-01 14:53:30,651 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before creating new chrome driver
+2021-02-01 14:53:34,663 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new chrome driver
+2021-02-01 14:53:34,671 DEBUG A.SeleniumBrowser [main] After Setting implicit timeout
+2021-02-01 14:53:36,687 DEBUG A.SeleniumBrowser [main] After maximizing window 
+2021-02-01 14:53:36,688 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2021-02-01 14:53:36,688 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2021-02-01 14:53:36,688 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net
+2021-02-01 14:53:42,524 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net
+2021-02-01 14:53:44,144 DEBUG A.BrowserActions [main] Waiting for login button to be clickable...
+2021-02-01 14:53:44,278 DEBUG A.BrowserActions [main] Login button clicked successfully...
+2021-02-01 14:53:46,275 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2021-02-01 14:53:46,276 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2021-02-01 14:53:46,276 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2021-02-01 14:53:46,587 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2021-02-01 14:54:11,404 ERROR A.BrowserActions [main] Cluster is already exists
+2021-02-01 14:54:24,405 ERROR A.BrowserActions [main] Cluster is already exists
+2021-02-01 14:54:24,405 INFO T.E.InitAndCleanupPortal [main] Agent was found and delete action was done in Centcom, going to wait until service is uninstalled from agent
+2021-02-01 14:54:29,406 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:54:29,481 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:54:34,482 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:54:34,518 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:54:39,519 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:54:39,555 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:54:44,555 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:54:44,615 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:54:49,616 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:54:49,649 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:54:54,649 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:54:54,687 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:54:59,687 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:54:59,725 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:55:04,726 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:55:04,769 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:55:09,770 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:55:09,810 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:55:14,812 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:55:14,860 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:55:19,860 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:55:19,926 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:55:24,928 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:55:24,974 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:55:29,976 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:55:30,014 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:55:35,014 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:55:35,065 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:55:40,066 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:55:40,105 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:55:45,105 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:55:45,143 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:55:50,144 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:55:50,196 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:55:55,197 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:55:55,295 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:56:00,295 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:56:00,328 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:56:05,329 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:56:05,360 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:56:10,361 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:56:10,401 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:56:15,402 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:56:15,436 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:56:20,437 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:56:20,471 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:56:25,472 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:56:25,506 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:56:30,507 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:56:30,538 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:56:35,539 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:56:35,582 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:56:40,582 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:56:40,614 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:56:45,615 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:56:45,647 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:56:50,648 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:56:50,684 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:56:55,684 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:56:55,728 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:57:00,730 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:57:00,764 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:57:05,765 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:57:05,815 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:57:10,816 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:57:10,946 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:57:15,952 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:57:15,989 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 14:57:20,990 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 14:57:21,024 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 15:58:52,197 DEBUG T.RecordedTest [main] screenshot file: C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation/test-output/capture/InitAndCleanupPortal-01-02-2021-15.58.52.png
+2021-02-01 15:58:52,211 INFO T.E.InitAndCleanupPortal [main] Starting Cleanup agents
+2021-02-01 15:58:58,347 INFO U.R.SSHManager [main] Connected Successfully to host 10.243.68.245
+2021-02-01 15:58:58,350 INFO U.R.SSHManager [main] Going to executing command: hostname
+2021-02-01 15:58:58,381 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 15:58:58,382 INFO U.R.SSHManager [main] Going to executing command: Cluster
+2021-02-01 15:58:58,398 WARN U.R.SSHManager [main] Error response: 
+'Cluster' is not recognized as an internal or external command,
+operable program or batch file.
+2021-02-01 15:59:03,943 INFO A.SimulatedAgentActions [main] SimulatedAgentActions, DS URL: https://endpoint-protection-services.qa.tw-test.net:443/
+2021-02-01 15:59:03,965 INFO T.E.InitAndCleanupPortal [main] Going to send delete action to Centcom for agent on hostanem NTY-EN-8D25HC2
+2021-02-01 15:59:03,965 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before switch application type: Chrome
+2021-02-01 15:59:03,966 DEBUG A.SeleniumBrowser [main] Setting Chrome driver location: C:/home/NepManagerDownloads/utils/chromedriver.exe
+2021-02-01 15:59:03,966 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new hashMap
+2021-02-01 15:59:03,967 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After reading MasterDownloadFolder property: C:\home\NepManagerDownloads
+2021-02-01 15:59:03,967 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After put to hash
+2021-02-01 15:59:03,973 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After new chrome options
+2021-02-01 15:59:03,976 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After chrome setExperimentalOption
+2021-02-01 15:59:03,976 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before setting several chrome options
+2021-02-01 15:59:03,985 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before creating new chrome driver
+2021-02-01 15:59:08,085 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new chrome driver
+2021-02-01 15:59:08,093 DEBUG A.SeleniumBrowser [main] After Setting implicit timeout
+2021-02-01 15:59:10,107 DEBUG A.SeleniumBrowser [main] After maximizing window 
+2021-02-01 15:59:10,108 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2021-02-01 15:59:10,108 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2021-02-01 15:59:10,109 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net
+2021-02-01 15:59:17,558 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net
+2021-02-01 15:59:19,185 DEBUG A.BrowserActions [main] Waiting for login button to be clickable...
+2021-02-01 15:59:19,380 DEBUG A.BrowserActions [main] Login button clicked successfully...
+2021-02-01 15:59:21,364 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2021-02-01 15:59:21,365 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2021-02-01 15:59:21,365 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2021-02-01 15:59:21,854 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2021-02-01 16:01:08,516 ERROR A.BrowserActions [main] Could not select the specific cluster  at CentCom search page. cluster: jhhhhgffccc
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //twa-table-checkbox//div (tried for 60 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95) ~[selenium-support-3.141.59.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272) ~[selenium-support-3.141.59.jar:?]
+	at Pages.GenericPage.WaitUntilObjectClickable(GenericPage.java:30) ~[classes/:?]
+	at Actions.BrowserActions.CreateNewCluster(BrowserActions.java:837) ~[classes/:?]
+	at Tests.Environments.InitAndCleanupPortal.CreateNewClusterActions(InitAndCleanupPortal.java:127) ~[classes/:?]
+	at Tests.Environments.InitAndCleanupPortal.cleanupAgents(InitAndCleanupPortal.java:67) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.1.0.jar:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1540) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:766) [testng-7.1.0.jar:?]
+	at org.testng.TestRunner.run(TestRunner.java:587) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96) [testng-7.1.0.jar:?]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187) [testng-7.1.0.jar:?]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109) [testng-7.1.0.jar:?]
+	at org.testng.TestNG.runSuites(TestNG.java:1039) [testng-7.1.0.jar:?]
+	at org.testng.TestNG.run(TestNG.java:1007) [testng-7.1.0.jar:?]
+	at Utils.Main.RunTest.main(RunTest.java:116) [classes/:?]
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=88.0.4324.104)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NTY-EN-8D25HC2', ip: '10.243.68.245', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\MOSHE~1.AVI\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:63690}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 4604eca62e830fddca6a5e5ad08c3263
+*** Element info: {Using=xpath, value=//twa-table-checkbox//div}
+	at jdk.internal.reflect.GeneratedConstructorAccessor23.newInstance(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353) ~[selenium-api-3.141.59.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205) ~[selenium-support-3.141.59.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201) ~[selenium-support-3.141.59.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641) ~[selenium-support-3.141.59.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638) ~[selenium-support-3.141.59.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249) ~[selenium-support-3.141.59.jar:?]
+	... 30 more
+2021-02-01 16:01:08,529 ERROR A.BrowserActions [main] Could not select the specific cluster  at CentCom search page. cluster: 
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=88.0.4324.104)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NTY-EN-8D25HC2', ip: '10.243.68.245', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\MOSHE~1.AVI\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:63690}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 4604eca62e830fddca6a5e5ad08c3263
+*** Element info: {Using=xpath, value=//div[contains(text(),'Clusters')]}
+	at jdk.internal.reflect.GeneratedConstructorAccessor23.newInstance(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353) ~[selenium-api-3.141.59.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69) ~[selenium-support-3.141.59.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-3.141.59.jar:?]
+	at com.sun.proxy.$Proxy30.click(Unknown Source) ~[?:?]
+	at Actions.BrowserActions.CreateNewCluster(BrowserActions.java:679) ~[classes/:?]
+	at Tests.Environments.InitAndCleanupPortal.CreateNewClusterActions(InitAndCleanupPortal.java:129) ~[classes/:?]
+	at Tests.Environments.InitAndCleanupPortal.cleanupAgents(InitAndCleanupPortal.java:67) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.1.0.jar:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1540) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:766) [testng-7.1.0.jar:?]
+	at org.testng.TestRunner.run(TestRunner.java:587) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96) [testng-7.1.0.jar:?]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187) [testng-7.1.0.jar:?]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109) [testng-7.1.0.jar:?]
+	at org.testng.TestNG.runSuites(TestNG.java:1039) [testng-7.1.0.jar:?]
+	at org.testng.TestNG.run(TestNG.java:1007) [testng-7.1.0.jar:?]
+	at Utils.Main.RunTest.main(RunTest.java:116) [classes/:?]
+2021-02-01 16:01:08,531 INFO T.E.InitAndCleanupPortal [main] Agent was found and delete action was done in Centcom, going to wait until service is uninstalled from agent
+2021-02-01 16:03:02,037 DEBUG T.RecordedTest [main] screenshot file: C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation/test-output/capture/InitAndCleanupPortal-01-02-2021-16.03.02.png
+2021-02-01 16:03:02,045 INFO T.E.InitAndCleanupPortal [main] Starting Cleanup agents
+2021-02-01 16:03:07,800 INFO U.R.SSHManager [main] Connected Successfully to host 10.243.68.245
+2021-02-01 16:03:07,802 INFO U.R.SSHManager [main] Going to executing command: hostname
+2021-02-01 16:03:07,830 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 16:03:07,830 INFO U.R.SSHManager [main] Going to executing command: Cluster
+2021-02-01 16:03:07,842 WARN U.R.SSHManager [main] Error response: 
+'Cluster' is not recognized as an internal or external command,
+operable program or batch file.
+2021-02-01 16:03:11,724 INFO A.SimulatedAgentActions [main] SimulatedAgentActions, DS URL: https://endpoint-protection-services.qa.tw-test.net:443/
+2021-02-01 16:03:11,742 INFO T.E.InitAndCleanupPortal [main] Going to send delete action to Centcom for agent on hostanem NTY-EN-8D25HC2
+2021-02-01 16:03:11,742 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before switch application type: Chrome
+2021-02-01 16:03:11,743 DEBUG A.SeleniumBrowser [main] Setting Chrome driver location: C:/home/NepManagerDownloads/utils/chromedriver.exe
+2021-02-01 16:03:11,743 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new hashMap
+2021-02-01 16:03:11,743 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After reading MasterDownloadFolder property: C:\home\NepManagerDownloads
+2021-02-01 16:03:11,744 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After put to hash
+2021-02-01 16:03:11,748 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After new chrome options
+2021-02-01 16:03:11,751 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After chrome setExperimentalOption
+2021-02-01 16:03:11,751 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before setting several chrome options
+2021-02-01 16:03:11,756 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - Before creating new chrome driver
+2021-02-01 16:03:15,819 DEBUG A.SeleniumBrowser [main] Selenium browser Launch - After creating new chrome driver
+2021-02-01 16:03:15,827 DEBUG A.SeleniumBrowser [main] After Setting implicit timeout
+2021-02-01 16:03:17,841 DEBUG A.SeleniumBrowser [main] After maximizing window 
+2021-02-01 16:03:17,841 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2021-02-01 16:03:17,841 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2021-02-01 16:03:17,842 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net
+2021-02-01 16:03:24,014 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net
+2021-02-01 16:03:25,626 DEBUG A.BrowserActions [main] Waiting for login button to be clickable...
+2021-02-01 16:03:25,805 DEBUG A.BrowserActions [main] Login button clicked successfully...
+2021-02-01 16:03:28,223 DEBUG A.SeleniumBrowser [main] LoadURL: Before check if driver equals to null 
+2021-02-01 16:03:28,223 DEBUG A.SeleniumBrowser [main] LoadURL: After check if driver equals to null 
+2021-02-01 16:03:28,223 DEBUG A.SeleniumBrowser [main] LoadURL: URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2021-02-01 16:03:28,627 DEBUG A.SeleniumBrowser [main] LoadURL: after get URL =  https://portal.qa.tw-test.net/#/operations?menuKey=centcom-devices&stackKey=entity-search&types=EntityType.AGENT
+2021-02-01 16:05:59,954 ERROR A.BrowserActions [main] Could not select the specific cluster  at CentCom search page. cluster: jhhhhgffccc
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//twa-menu[@twatooltip="Actions"]"}
+  (Session info: chrome=88.0.4324.104)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NTY-EN-8D25HC2', ip: '10.243.68.245', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\MOSHE~1.AVI\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:63761}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 1070eed5b271eb74a6ee63583ffea0c5
+*** Element info: {Using=xpath, value=//twa-menu[@twatooltip="Actions"]}
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353) ~[selenium-api-3.141.59.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69) ~[selenium-support-3.141.59.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-3.141.59.jar:?]
+	at com.sun.proxy.$Proxy30.click(Unknown Source) ~[?:?]
+	at Actions.BrowserActions.CreateNewCluster(BrowserActions.java:870) ~[classes/:?]
+	at Tests.Environments.InitAndCleanupPortal.CreateNewClusterActions(InitAndCleanupPortal.java:127) ~[classes/:?]
+	at Tests.Environments.InitAndCleanupPortal.cleanupAgents(InitAndCleanupPortal.java:67) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146) ~[testng-7.1.0.jar:?]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.1.0.jar:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1540) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:766) [testng-7.1.0.jar:?]
+	at org.testng.TestRunner.run(TestRunner.java:587) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53) [testng-7.1.0.jar:?]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96) [testng-7.1.0.jar:?]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187) [testng-7.1.0.jar:?]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109) [testng-7.1.0.jar:?]
+	at org.testng.TestNG.runSuites(TestNG.java:1039) [testng-7.1.0.jar:?]
+	at org.testng.TestNG.run(TestNG.java:1007) [testng-7.1.0.jar:?]
+	at Utils.Main.RunTest.main(RunTest.java:116) [classes/:?]
+2021-02-01 16:06:13,445 ERROR A.BrowserActions [main] Cluster is already exists
+2021-02-01 16:06:13,446 INFO T.E.InitAndCleanupPortal [main] Agent was found and delete action was done in Centcom, going to wait until service is uninstalled from agent
+2021-02-01 16:06:18,446 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 16:06:18,491 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 16:06:23,491 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 16:06:23,524 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 16:06:28,525 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 16:06:28,559 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 16:06:33,559 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 16:06:33,600 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 16:06:38,601 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 16:06:38,636 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 16:06:43,638 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 16:06:43,688 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 16:06:48,688 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 16:06:48,723 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 16:06:53,724 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 16:06:53,789 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 16:06:58,790 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 16:06:58,827 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 16:07:03,827 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 16:07:03,893 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 16:07:08,895 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 16:07:08,983 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 16:07:13,983 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 16:07:14,021 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 16:07:19,022 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 16:07:19,061 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 16:07:24,062 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 16:07:24,096 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 16:07:29,097 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 16:07:29,131 DEBUG U.R.SSHManager [main] Done.
+2021-02-01 16:07:34,133 INFO U.R.SSHManager [main] Going to executing command: net start
+2021-02-01 16:07:34,191 DEBUG U.R.SSHManager [main] Done.
