@@ -187,14 +187,18 @@
                   <a name="cleanupAgents">
                   </a> <!-- cleanupAgents -->
                   <span class="method-name">cleanupAgents</span>
-                  <div class="stack-trace">java.lang.AssertionError: Uninstall failed. Trustwave Endpoint Agent Service still found after timeout(sec): 180
+                  <div class="stack-trace">java.lang.AssertionError: Could not create SSH connection to machine: 10.243.68.105  user name: Moshe.Avidor password: Smile2009@ port number: 22
+com.jcraft.jsch.JSchException: java.net.ConnectException: Connection timed out: connect
 
-Video: C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation/test-output/capture/InitAndCleanupPortal-27-01-2021-16.30.10.avi
+Video: C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation/test-output/capture/InitAndCleanupPortal-18-02-2021-15.21.27.avi
 
 
-	at Actions.WinAgentActions.uninstallEndpoint(WinAgentActions.java:162)
-	at Tests.Environments.InitAndCleanupPortal.verifyServiceUninstalledOrForceUninstall(InitAndCleanupPortal.java:101)
-	at Tests.Environments.InitAndCleanupPortal.cleanupAgents(InitAndCleanupPortal.java:72)
+	at Utils.Remote.SSHManager.Connect(SSHManager.java:61)
+	at Utils.Remote.SSHManager.&lt;init&gt;(SSHManager.java:32)
+	at Actions.BaseAgentActions.&lt;init&gt;(BaseAgentActions.java:46)
+	at Actions.WinAgentActions.&lt;init&gt;(WinAgentActions.java:42)
+	at Actions.AgentActionsFactory.getAgentActions(AgentActionsFactory.java:11)
+	at Tests.Environments.InitAndCleanupPortal.cleanupAgents(InitAndCleanupPortal.java:54)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
 	at Utils.Main.RunTest.main(RunTest.java:116)
 ... Removed 25 stack frames
@@ -226,15 +230,15 @@ Video: C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation/test-output/captu
           <div class="suite-Smoke_tests___Portal_QA_env-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
-              <span class="class-name">Tests.Environments.InstallEndPointEnvironmentsTest</span>
+              <span class="class-name">Tests.LNE.DeleteEndpoint</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="InstallTest">
-                  </a> <!-- InstallTest -->
-                  <span class="method-name">InstallTest</span>
-                  <div class="stack-trace">java.lang.Throwable: Method InstallEndPointEnvironmentsTest.InstallTest()[pri:0, instance:Tests.Environments.InstallEndPointEnvironmentsTest@5965844d, instance params:[{Installation timeout=180, From service start until logs show active timeout=180, EP_Type_1=win, EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2008@, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.212}]] depends on not successfully finished methods in group &quot;ChangeCustomerConfAndVerify&quot;
+                  <a name="deleteEndpoint">
+                  </a> <!-- deleteEndpoint -->
+                  <span class="method-name">deleteEndpoint</span>
+                  <div class="stack-trace">java.lang.Throwable: Method DeleteEndpoint.deleteEndpoint()[pri:10, instance:Tests.LNE.DeleteEndpoint@dffa30b, instance params:[{EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2009@, EP_Type_1=win, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.105}]] depends on not successfully finished methods in group &quot;InstallEP&quot;
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
 	at Utils.Main.RunTest.main(RunTest.java:116)
 ... Removed 15 stack frames
@@ -246,15 +250,15 @@ Video: C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation/test-output/captu
           <div class="suite-Smoke_tests___Portal_QA_env-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
-              <span class="class-name">Tests.LNE.DeleteEndpoint</span>
+              <span class="class-name">Tests.Environments.InstallEndPointEnvironmentsTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="deleteEndpoint">
-                  </a> <!-- deleteEndpoint -->
-                  <span class="method-name">deleteEndpoint</span>
-                  <div class="stack-trace">java.lang.Throwable: Method DeleteEndpoint.deleteEndpoint()[pri:10, instance:Tests.LNE.DeleteEndpoint@dffa30b, instance params:[{EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2008@, EP_Type_1=win, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.212}]] depends on not successfully finished methods in group &quot;InstallEP&quot;
+                  <a name="InstallTest">
+                  </a> <!-- InstallTest -->
+                  <span class="method-name">InstallTest</span>
+                  <div class="stack-trace">java.lang.Throwable: Method InstallEndPointEnvironmentsTest.InstallTest()[pri:0, instance:Tests.Environments.InstallEndPointEnvironmentsTest@5965844d, instance params:[{Installation timeout=180, From service start until logs show active timeout=180, EP_Type_1=win, EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2009@, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.105}]] depends on not successfully finished methods in group &quot;ChangeCustomerConfAndVerify&quot;
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
 	at Utils.Main.RunTest.main(RunTest.java:116)
 ... Removed 15 stack frames
@@ -274,7 +278,7 @@ Video: C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation/test-output/captu
                   <a name="revokeEndpoint">
                   </a> <!-- revokeEndpoint -->
                   <span class="method-name">revokeEndpoint</span>
-                  <div class="stack-trace">java.lang.Throwable: Method RevokeEndpoint.revokeEndpoint()[pri:11, instance:Tests.LNE.RevokeEndpoint@7f02251, instance params:[{EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2008@, EP_Type_1=win, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.212}]] depends on not successfully finished methods in group &quot;InstallEP&quot;
+                  <div class="stack-trace">java.lang.Throwable: Method RevokeEndpoint.revokeEndpoint()[pri:11, instance:Tests.LNE.RevokeEndpoint@7f02251, instance params:[{EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2009@, EP_Type_1=win, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.105}]] depends on not successfully finished methods in group &quot;InstallEP&quot;
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
 	at Utils.Main.RunTest.main(RunTest.java:116)
 ... Removed 15 stack frames
@@ -314,27 +318,7 @@ Video: C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation/test-output/captu
                   <a name="setClusterConfiguration">
                   </a> <!-- setClusterConfiguration -->
                   <span class="method-name">setClusterConfiguration</span>
-                  <div class="stack-trace">java.lang.Throwable: Method ClusterConfiguration.setClusterConfiguration()[pri:20, instance:Tests.LNE.ClusterConfiguration@4c98a6d5, instance params:[{EP_Type_1=win, EP_Type_2=win, EP_UserName_1=Moshe.Avidor, EP_Password_2=password, EP_UserName_2=user name, EP_Password_1=Smile2008@, EP_HostName_1=10.243.68.212, EP_Values_Populate_Method=All_EP_In_One_Row, EP_HostName_2=hostname}]] depends on not successfully finished methods in group &quot;InstallEP&quot;
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-	at Utils.Main.RunTest.main(RunTest.java:116)
-... Removed 15 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Smoke_tests___Portal_QA_env-class-skipped -->
-          <div class="suite-Smoke_tests___Portal_QA_env-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">Tests.LNE.ChangeCustomerConfAndVerify</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="changeCustomerConfAndVerify">
-                  </a> <!-- changeCustomerConfAndVerify -->
-                  <span class="method-name">changeCustomerConfAndVerify</span>
-                  <div class="stack-trace">java.lang.Throwable: Method ChangeCustomerConfAndVerify.changeCustomerConfAndVerify()[pri:20, instance:Tests.LNE.ChangeCustomerConfAndVerify@6f952d6c, instance params:[{EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2008@, EP_Type_1=win, EP_HostName_1=10.243.68.212, EP_Values_Populate_Method=All_EP_In_One_Row}]] depends on not successfully finished methods in group &quot;DownloadInstallers&quot;
+                  <div class="stack-trace">java.lang.Throwable: Method ClusterConfiguration.setClusterConfiguration()[pri:20, instance:Tests.LNE.ClusterConfiguration@4c98a6d5, instance params:[{EP_Type_1=win, EP_Type_2=win, EP_UserName_1=Moshe.Avidor, EP_Password_2=password, EP_UserName_2=user name, EP_Password_1=Smile2009@, EP_HostName_1=10.243.68.105, EP_Values_Populate_Method=All_EP_In_One_Row, EP_HostName_2=hostname}]] depends on not successfully finished methods in group &quot;InstallEP&quot;
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
 	at Utils.Main.RunTest.main(RunTest.java:116)
 ... Removed 15 stack frames
@@ -354,7 +338,27 @@ Video: C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation/test-output/captu
                   <a name="SendLogsAndVerify">
                   </a> <!-- SendLogsAndVerify -->
                   <span class="method-name">SendLogsAndVerify</span>
-                  <div class="stack-trace">java.lang.Throwable: Method ClientLogToPortalTest.SendLogsAndVerify()[pri:0, instance:Tests.Environments.ClientLogToPortalTest@aa004a0, instance params:[{Event Description=Hello!! this is the test info, Customer=TrustwaveEP Test#21, Log To Appear Timeout=1800, Event Log=APPLICATION, Fusion Password=P@ssw0rd1, EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2008@, Parameters Per Environment=QA, Fusion User Name=twSuperAdmin, Event ID=123, Add time stamp to description=Yes, Event Source=AutomationTest, Fusion Link=https://portal.qa.tw-test.net, EP_Type_1=win, Event Type=INFORMATION, Report Interval=30, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.212}]] depends on not successfully finished methods in group &quot;verify&quot;
+                  <div class="stack-trace">java.lang.Throwable: Method ClientLogToPortalTest.SendLogsAndVerify()[pri:0, instance:Tests.Environments.ClientLogToPortalTest@aa004a0, instance params:[{Event Description=Hello!! this is the test info, Customer=TrustwaveEP Test#21, Log To Appear Timeout=1800, Event Log=APPLICATION, Fusion Password=P@ssw0rd1, EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2009@, Parameters Per Environment=QA, Fusion User Name=twSuperAdmin, Event ID=123, Add time stamp to description=Yes, Event Source=AutomationTest, Fusion Link=https://portal.qa.tw-test.net, EP_Type_1=win, Event Type=INFORMATION, Report Interval=30, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.105}]] depends on not successfully finished methods in group &quot;verify&quot;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at Utils.Main.RunTest.main(RunTest.java:116)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Smoke_tests___Portal_QA_env-class-skipped -->
+          <div class="suite-Smoke_tests___Portal_QA_env-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">Tests.LNE.ChangeCustomerConfAndVerify</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="changeCustomerConfAndVerify">
+                  </a> <!-- changeCustomerConfAndVerify -->
+                  <span class="method-name">changeCustomerConfAndVerify</span>
+                  <div class="stack-trace">java.lang.Throwable: Method ChangeCustomerConfAndVerify.changeCustomerConfAndVerify()[pri:20, instance:Tests.LNE.ChangeCustomerConfAndVerify@6f952d6c, instance params:[{EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2009@, EP_Type_1=win, EP_HostName_1=10.243.68.105, EP_Values_Populate_Method=All_EP_In_One_Row}]] depends on not successfully finished methods in group &quot;DownloadInstallers&quot;
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
 	at Utils.Main.RunTest.main(RunTest.java:116)
 ... Removed 15 stack frames
@@ -374,7 +378,7 @@ Video: C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation/test-output/captu
                   <a name="VerifyEndPointStatusAtPortalTest">
                   </a> <!-- VerifyEndPointStatusAtPortalTest -->
                   <span class="method-name">VerifyEndPointStatusAtPortalTest</span>
-                  <div class="stack-trace">java.lang.Throwable: Method VerifyEndPointOkAtPortalTest.VerifyEndPointStatusAtPortalTest()[pri:0, instance:Tests.Environments.VerifyEndPointOkAtPortalTest@6d4a65c6, instance params:[{EP_Type_1=win, Customer=TrustwaveEP Test#21, EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2008@, Parameters Per Environment=QA, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.212, EP Appear At CentCom Timeout=120}]] depends on not successfully finished methods in group &quot;InstallEP&quot;
+                  <div class="stack-trace">java.lang.Throwable: Method VerifyEndPointOkAtPortalTest.VerifyEndPointStatusAtPortalTest()[pri:0, instance:Tests.Environments.VerifyEndPointOkAtPortalTest@6d4a65c6, instance params:[{EP_Type_1=win, Customer=TrustwaveEP Test#21, EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2009@, Parameters Per Environment=QA, EP_Values_Populate_Method=Row_For_Every_EP, EP_HostName_1=10.243.68.105, EP Appear At CentCom Timeout=120}]] depends on not successfully finished methods in group &quot;InstallEP&quot;
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
 	at Utils.Main.RunTest.main(RunTest.java:116)
 ... Removed 15 stack frames
@@ -394,7 +398,7 @@ Video: C:\Nep-4-next\nep-qa-next@f35aa3a96df\nep-qa-automation/test-output/captu
                   <a name="verifyStandaloneEPconfiguration">
                   </a> <!-- verifyStandaloneEPconfiguration -->
                   <span class="method-name">verifyStandaloneEPconfiguration</span>
-                  <div class="stack-trace">java.lang.Throwable: Method StandaloneEPconfigurationVerify.verifyStandaloneEPconfiguration()[pri:20, instance:Tests.LNE.StandaloneEPconfigurationVerify@392a04e7, instance params:[{StandAloneConfig=#REF!, EP_Type_1=win, EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2008@, EP_HostName_1=10.243.68.212, EP_Values_Populate_Method=All_EP_In_One_Row, Download timeout=180}]] depends on not successfully finished methods in group &quot;InstallEP&quot;
+                  <div class="stack-trace">java.lang.Throwable: Method StandaloneEPconfigurationVerify.verifyStandaloneEPconfiguration()[pri:20, instance:Tests.LNE.StandaloneEPconfigurationVerify@392a04e7, instance params:[{StandAloneConfig=#REF!, EP_Type_1=win, EP_UserName_1=Moshe.Avidor, EP_Password_1=Smile2009@, EP_HostName_1=10.243.68.105, EP_Values_Populate_Method=All_EP_In_One_Row, Download timeout=180}]] depends on not successfully finished methods in group &quot;InstallEP&quot;
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
 	at Utils.Main.RunTest.main(RunTest.java:116)
 ... Removed 15 stack frames
@@ -571,52 +575,52 @@ data.addRows(11);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'cleanupAgents')
 data.setCell(0, 2, 'Tests.Environments.InitAndCleanupPortal')
-data.setCell(0, 3, 489224);
+data.setCell(0, 3, 21058);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'revokeEndpoint')
-data.setCell(1, 2, 'Tests.LNE.RevokeEndpoint')
-data.setCell(1, 3, 0);
+data.setCell(1, 1, 'CreateNewInstalllersAndDeleteOldInstallers')
+data.setCell(1, 2, 'Tests.Environments.CreateNewInstallers')
+data.setCell(1, 3, 1);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'VerifyEndPointStatusAtPortalTest')
-data.setCell(2, 2, 'Tests.Environments.VerifyEndPointOkAtPortalTest')
+data.setCell(2, 1, 'SendLogsAndVerify')
+data.setCell(2, 2, 'Tests.Environments.ClientLogToPortalTest')
 data.setCell(2, 3, 0);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'changeCustomerConfAndVerify')
-data.setCell(3, 2, 'Tests.LNE.ChangeCustomerConfAndVerify')
+data.setCell(3, 1, 'VerifyEndPointStatusAtPortalTest')
+data.setCell(3, 2, 'Tests.Environments.VerifyEndPointOkAtPortalTest')
 data.setCell(3, 3, 0);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyStandaloneEPconfiguration')
-data.setCell(4, 2, 'Tests.LNE.StandaloneEPconfigurationVerify')
+data.setCell(4, 1, 'changeCustomerConfAndVerify')
+data.setCell(4, 2, 'Tests.LNE.ChangeCustomerConfAndVerify')
 data.setCell(4, 3, 0);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'SendLogsAndVerify')
-data.setCell(5, 2, 'Tests.Environments.ClientLogToPortalTest')
+data.setCell(5, 1, 'deleteEndpoint')
+data.setCell(5, 2, 'Tests.LNE.DeleteEndpoint')
 data.setCell(5, 3, 0);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'InstallTest')
-data.setCell(6, 2, 'Tests.Environments.InstallEndPointEnvironmentsTest')
+data.setCell(6, 1, 'setClusterConfiguration')
+data.setCell(6, 2, 'Tests.LNE.ClusterConfiguration')
 data.setCell(6, 3, 0);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'setClusterConfiguration')
-data.setCell(7, 2, 'Tests.LNE.ClusterConfiguration')
+data.setCell(7, 1, 'verifyStandaloneEPconfiguration')
+data.setCell(7, 2, 'Tests.LNE.StandaloneEPconfigurationVerify')
 data.setCell(7, 3, 0);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'CreateNewInstalllersAndDeleteOldInstallers')
-data.setCell(8, 2, 'Tests.Environments.CreateNewInstallers')
+data.setCell(8, 1, 'revokeEndpoint')
+data.setCell(8, 2, 'Tests.LNE.RevokeEndpoint')
 data.setCell(8, 3, 0);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'downloadInstallersFromFileCabinet')
-data.setCell(9, 2, 'Tests.Environments.DownloadInstallers')
+data.setCell(9, 1, 'InstallTest')
+data.setCell(9, 2, 'Tests.Environments.InstallEndPointEnvironmentsTest')
 data.setCell(9, 3, 0);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'deleteEndpoint')
-data.setCell(10, 2, 'Tests.LNE.DeleteEndpoint')
+data.setCell(10, 1, 'downloadInstallersFromFileCabinet')
+data.setCell(10, 2, 'Tests.Environments.DownloadInstallers')
 data.setCell(10, 3, 0);
 window.suiteTableData['Smoke_tests___Portal_QA_env']= { tableData: data, tableDiv: 'times-div-Smoke_tests___Portal_QA_env'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 minutes</span>
+              <span class="suite-total-time">Total running time: 21 seconds</span>
               <div id="times-div-Smoke_tests___Portal_QA_env">
               </div> <!-- times-div-Smoke_tests___Portal_QA_env -->
             </div> <!-- times-div -->
@@ -651,85 +655,85 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">cleanupAgents</span>
-                <span class="method-start">19 ms</span>
+                <span class="method-start">30 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">Close</span>
-                <span class="method-start">493317 ms</span>
+                <span class="method-start">21098 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">494149 ms</span>
+                <span class="method-start">21099 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Tests.Environments.CreateNewInstallers</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">CreateNewInstalllersAndDeleteOldInstallers</span>
-                <span class="method-start">494154 ms</span>
+                <span class="method-start">21101 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Tests.Environments.DownloadInstallers</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">downloadInstallersFromFileCabinet</span>
-                <span class="method-start">494154 ms</span>
+                <span class="method-start">21102 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Tests.LNE.ChangeCustomerConfAndVerify</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">changeCustomerConfAndVerify</span>
-                <span class="method-start">494155 ms</span>
+                <span class="method-start">21102 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Tests.Environments.InstallEndPointEnvironmentsTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">InstallTest</span>
-                <span class="method-start">494155 ms</span>
+                <span class="method-start">21103 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Tests.Environments.VerifyEndPointOkAtPortalTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">VerifyEndPointStatusAtPortalTest</span>
-                <span class="method-start">494156 ms</span>
+                <span class="method-start">21103 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Tests.Environments.ClientLogToPortalTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">SendLogsAndVerify</span>
-                <span class="method-start">494156 ms</span>
+                <span class="method-start">21103 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Tests.LNE.DeleteEndpoint</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">deleteEndpoint</span>
-                <span class="method-start">494156 ms</span>
+                <span class="method-start">21103 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Tests.LNE.RevokeEndpoint</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">revokeEndpoint</span>
-                <span class="method-start">494157 ms</span>
+                <span class="method-start">21104 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Tests.LNE.ClusterConfiguration</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">setClusterConfiguration</span>
-                <span class="method-start">494157 ms</span>
+                <span class="method-start">21104 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Tests.LNE.StandaloneEPconfigurationVerify</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifyStandaloneEPconfiguration</span>
-                <span class="method-start">494157 ms</span>
+                <span class="method-start">21104 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

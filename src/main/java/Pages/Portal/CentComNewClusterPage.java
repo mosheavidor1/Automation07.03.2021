@@ -112,12 +112,33 @@ public  static  final By ContinueBy=By.xpath(ClickOnContinue);
        }
 
 
+
+       //Click on Binocular's button :
+
+       @FindBy(how= How.XPATH,using="//twa-button[@icon='tw-binoculars']/material-button")
+       public WebElement binocularsButton_element;
+
+
+//Search for value in Binocular's button:
+       private static final String valueToSearchXpath ="//twa-form-item[@label='Value']//input";
+       public static final By valueToSearchBy = By.xpath(valueToSearchXpath);
+       @FindBy(how= How.XPATH,using=valueToSearchXpath)
+       public WebElement valueToSearch_element;
+
+
+
     //Click on checkbox next to added end point
 
-       private static final String ClickOnEndPointCheckBox = "//*[@id=\"default-acx-overlay-container\"]/div[72]/material-dialog/focus-trap/div[2]/div/main/div/div/twa-table/div[3]/twa-table-row[2]/div[1]/twa-table-checkbox/div/span[1]";
+       private static final String ClickOnEndPointCheckBox = "//twa-table-checkbox//div";
        public static final By ClickOnEndPointCheckBoxBy = By.xpath(ClickOnEndPointCheckBox);
        @FindBy(how = How.XPATH, using = ClickOnEndPointCheckBox)
        public WebElement EndPointCheckBox;
+
+
+
+
+
+
 
        //Assign Button
 

@@ -126,7 +126,7 @@ public class InitAndCleanupPortal extends RecordedTest {
 
                browserActions.CreateNewCluster(data.get("Cluster"),String.valueOf(data.get("hostname")));
 
-                return browserActions.CreateNewCluster(hostname,ClusterName);
+               return browserActions.CreateNewCluster(hostname,ClusterName);
 
             } catch (Exception e) {
                 org.testng.Assert.fail("Could not delete endpoint from CentCom: " + "\n" + e.toString(), e);

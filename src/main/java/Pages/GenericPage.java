@@ -26,7 +26,7 @@ public class GenericPage {
     
     public void WaitUntilObjectClickable(By byElement)
     {
-        WebDriverWait wait = new WebDriverWait(driver,  60);
+      WebDriverWait wait = new WebDriverWait(driver,  60);
         wait.until(ExpectedConditions.elementToBeClickable(byElement));
 
     }
