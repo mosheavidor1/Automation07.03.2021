@@ -53,7 +53,7 @@ public class GenericPage {
         boolean isEmpty = driver.findElements( byElement ).isEmpty();
         driver.manage().timeouts().implicitlyWait(SeleniumBrowser.implicitWait, TimeUnit.SECONDS);
         return ! isEmpty;
-        //5
+        
 
     }
     
